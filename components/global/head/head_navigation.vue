@@ -15,7 +15,7 @@
 								</div>
 
 								<ul class="cat_menu">
-									<li class="hassubs" v-for="(i,k) in menu" :key="k">
+									<li class="hassubs" v-for="(i,k) in menu"  :key="k">
 										<a href="#">{{i.name}}<i class="fas fa-chevron-right"></i></a>
 										<ul>
 											<li v-for="(j,k) in i.child" :key="k"><a href="#">{{j.name}}<i class="fas fa-chevron-right"></i></a></li>
@@ -81,8 +81,10 @@ export default {
   },
   async fetch(){
     await this.getCategories()
+
   },
   mounted() {
+    this.getCategories()
       if(this.$route.path==='/'){
         var menu = this.$refs.menu;
         menu.classList.remove('hidemenu')
@@ -92,6 +94,7 @@ export default {
     async getCategories(){
         let data = await this.$axios.get('/catalog/categories/');
         this.menu = data.data.results;
+        this.$forceUpdate()
     },
   }
 }
