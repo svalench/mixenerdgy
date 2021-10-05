@@ -233,6 +233,9 @@ section
 {
 	padding: 0px !important;
 }
+.logo-image{
+    width:200px;
+  }
 .button
 {
 	display: inline-block;
@@ -301,6 +304,9 @@ section
 @media (max-width: 800px) {
   .top_bar_contact_item .timework{
     display: none;
+  }
+  .logo-image{
+    width:130px;
   }
 }
 .top_bar_contact_item:not(:first-child)
@@ -1205,9 +1211,10 @@ select option
 
 .banner
 {
+  /*height: 30vh;*/
 	width: 100%;
-	padding-top: 68px;
-	padding-bottom: 83px;
+	/*padding-top: 68px;*/
+	padding-bottom: 33px;
 	overflow: hidden;
 }
 .banner_background
@@ -1229,10 +1236,11 @@ select option
 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	line-height: 1.166;
+	line-height: 1;
+  font-size: 18px;
 	color: #7599b2;
 	text-transform: uppercase;
-	letter-spacing: 0.038em;
+	letter-spacing: 0.008em;
 }
 .banner_price
 {

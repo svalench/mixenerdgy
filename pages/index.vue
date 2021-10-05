@@ -2,22 +2,60 @@
 <div>
   	<!-- Banner -->
 
-	<div class="banner">
-		<div class="banner_background" style="background-image:url(images/banner_1.jpg)"></div>
+	<div class="banner container" style="">
+<!--		<div class="banner_background" style="background-image:url(images/voda-fon.jpg); margin-left:305px"></div>-->
 <!--		<div class="banner_background" style="background-image:url(images/shop_background.jpg)"></div>-->
-		<div class="container fill_height">
-			<div class="row fill_height">
-<!--				<div class="banner_product_image"><img src="images/кран.png" alt=""></div>-->
-				<div class="col-lg-5 offset-lg-4 fill_height">
-					<div class="banner_content">
-						<h1 class="banner_text" style="color: #0e8ce4; font-weight: 700;">Надежно, качественно, быстро, доступно и без проблем!</h1>
-<!--						<div class="banner_price"><span>$530</span>$460</div>-->
-<!--						<div class="banner_product_name">Apple Iphone 6s</div>-->
-						<div class="button banner_button"><a href="#">В каталог</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
+<!--		<div class="container fill_height">-->
+<!--			<div class="row fill_height">-->
+<!--&lt;!&ndash;				<div class="banner_product_image"><img src="images/кран.png" alt=""></div>&ndash;&gt;-->
+<!--				<div class="col-lg-6 offset-lg-4 fill_height">-->
+<!--					<div class="banner_content">-->
+<!--						<h1 class="banner_text" style="color: #9c11bf; font-weight: 700;">Надежно, качественно, быстро, доступно и без проблем!</h1>-->
+<!--&lt;!&ndash;						<div class="banner_price"><span>$530</span>$460</div>&ndash;&gt;-->
+<!--&lt;!&ndash;						<div class="banner_product_name">Apple Iphone 6s</div>&ndash;&gt;-->
+<!--						<div class="button banner_button"><a href="#">В каталог</a></div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+
+  <b-row class="carusel-row">
+      <b-col offset="0" offset-lg="3">
+        <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#ababab"
+      img-width="1024"
+      img-height="480"
+      style="text-shadow: 1px 1px 2px #333;"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      <!-- Text slides with image -->
+      <b-carousel-slide
+        caption="First slide"
+        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        img-src="images/voda-fon.jpg"
+      ></b-carousel-slide>
+          <b-carousel-slide
+        caption="Second slide"
+        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        img-src="images/banner_1.jpg"
+      ></b-carousel-slide>
+          <b-carousel-slide
+        caption="Second slide"
+        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        img-src="images/blog_single_background.jpg"
+      ></b-carousel-slide>
+    </b-carousel>
+
+      </b-col>
+  </b-row>
+
+
 	</div>
 
 
@@ -130,3 +168,11 @@ export default {
   },
 }
 </script>
+<style>
+.carusel-row{
+  max-height: 400px;
+}
+.carusel-row img {
+  max-height: 300px;
+}
+</style>
