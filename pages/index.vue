@@ -31,8 +31,7 @@
       img-width="1024"
       img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
+
     >
       <!-- Text slides with image -->
       <b-carousel-slide
@@ -164,6 +163,7 @@ export default {
   data(){
     return{
       categories:[],
+      slide:null,
     }
   },
 }

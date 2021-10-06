@@ -2,20 +2,36 @@
 <div class="container" >
   <div class="row" >
     <div class="col-1 d-xs-block d-sm-none" > > </div>
-    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none" ref="menu"  style="padding-bottom: 20px; overflow: auto;">
-    <div v-for="(c,k) in categories" :key="k" class="item-menu" @click="saveCatShow($event,c)" @mouseout="showSeted()" @mouseover="showSecondLevel(c)">
-      <h2 style="font-size: 18px; padding: 25px;">{{c.name}}</h2>
-    </div>
-    </div>
+<!--    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none" ref="menu"  style="padding-bottom: 20px; overflow: auto;">-->
+<!--    <div v-for="(c,k) in categories" :key="k" class="item-menu" @click="saveCatShow($event,c)" @mouseout="showSeted()" @mouseover="showSecondLevel(c)">-->
+<!--      <h2 style="font-size: 18px; padding: 25px;">{{c.name}}</h2>-->
+<!--    </div>-->
+<!--    </div>-->
     <div class="col  global-childcat" ref="cats"  @mouseout="hideSelected()" @mouseover="saveSelected()">
       <div class="row">
-    <div class="col-4" v-for="i in tempSecondCat">
-      <b-card class=" card-style-subcat" @click="gotocat(i.id)">
-        <b-card-header>{{i.name}}</b-card-header>
-        <b-card-body>
-        </b-card-body>
-      </b-card>
-    </div>
+        <div v-if="tempSecondCat.length">
+          <div class="col-4" v-for="i in tempSecondCat">
+            <b-card class=" card-style-subcat" @click="gotocat(i.id)">
+              <b-card-header>{{i.name}}</b-card-header>
+              <b-card-body>
+              </b-card-body>
+            </b-card>
+          </div>
+        </div>
+        <div v-else>
+             <div class="col" v-for="i in categories">
+                <div style="display: block;"><h2>{{i.name}}</h2><hr></div>
+               <div class="row">
+                 <div class="col-3" v-for="j in i.child">
+            <b-card class=" card-style-subcat" @click="gotocat(j.id)">
+              <b-card-header>{{j.name}}</b-card-header>
+              <b-card-body>
+              </b-card-body>
+            </b-card>
+          </div>
+               </div>
+             </div>
+        </div>
   </div>
       </div>
     </div>
