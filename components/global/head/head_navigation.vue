@@ -18,7 +18,7 @@
 									<li class="hassubs" v-for="(i,k) in menu"  :key="k">
 										<a href="#">{{i.name}}<i class="fas fa-chevron-right"></i></a>
 										<ul>
-											<li v-for="(j,k) in i.child" :key="k"><a href="#">{{j.name}}<i class="fas fa-chevron-right"></i></a></li>
+                      <li v-for="(j,k) in i.child" :key="k"><nuxt-link :to="`/catalog/${j.id}`"><a href="#">{{j.name}}<i class="fas fa-chevron-right"></i></a></nuxt-link></li>
 										</ul>
 									</li>
 								</ul>

@@ -964,7 +964,9 @@ select option
 	font-weight: 300;
 	color: #000000;
   max-width: 300px;
-	line-height: 35px;
+	line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
