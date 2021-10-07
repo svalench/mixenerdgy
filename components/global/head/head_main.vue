@@ -32,7 +32,7 @@
 												</ul>
 											</div>
 										</div>
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="images/search.png" alt=""></button>
+										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="/images/search.png" alt=""></button>
 									</form>
 								</div>
 							</div>
@@ -46,7 +46,7 @@
 							<div class="cart">
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
-										<img src="images/cart.png" alt="">
+										<img src="/images/cart.png" alt="">
 										<div class="cart_count"><span>23</span></div>
 									</div>
 									<div class="cart_content">

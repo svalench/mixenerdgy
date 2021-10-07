@@ -2,18 +2,13 @@
 <div class="container" >
   <div class="row">
     <div class="col-1 d-xs-block d-sm-none" > > </div>
-    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none" style=" overflow: auto;">
+    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none"  style="max-height: 100vh; overflow: auto;">
     <my_filter></my_filter>
     </div>
     <div class="col">
       <div class="row">
-        <div class="col-4" v-for="(p,k) in products" :key="k">
-          <b-card>
-            <b-card-header>{{p.name}}</b-card-header>
-            <b-card-body>
-              <b-img style="width: 100px" :src="`https://api.mixenerdgy.by/media/${p.img}`"></b-img>
-            </b-card-body>
-          </b-card>
+        <div class="col-12 col-lg-4" v-for="(p,k) in products" :key="k">
+          <catalog_card :product="p"></catalog_card>
         </div>
       </div>
       <div class="paginator">
@@ -34,13 +29,14 @@
 
 <script>
 import my_filter from "../../components/catalog/filter";
+import Catalog_card from "../../components/catalog/catalog_card";
 export default {
   name: "catalog",
-  components: {my_filter},
+  components: {Catalog_card, my_filter},
   data(){
     return{
       currentPage: 1,
-      limit:6,
+      limit:9,
       offset:0,
       cat:null,
       count:0,

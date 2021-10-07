@@ -84,7 +84,6 @@ export default {
 
   },
   mounted() {
-    this.getCategories()
       if(this.$route.path==='/'){
         var menu = this.$refs.menu;
         menu.classList.remove('hidemenu')

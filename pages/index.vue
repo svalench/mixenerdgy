@@ -3,21 +3,6 @@
   	<!-- Banner -->
 
 	<div class="banner container" style="">
-<!--		<div class="banner_background" style="background-image:url(images/voda-fon.jpg); margin-left:305px"></div>-->
-<!--		<div class="banner_background" style="background-image:url(images/shop_background.jpg)"></div>-->
-<!--		<div class="container fill_height">-->
-<!--			<div class="row fill_height">-->
-<!--&lt;!&ndash;				<div class="banner_product_image"><img src="images/кран.png" alt=""></div>&ndash;&gt;-->
-<!--				<div class="col-lg-6 offset-lg-4 fill_height">-->
-<!--					<div class="banner_content">-->
-<!--						<h1 class="banner_text" style="color: #9c11bf; font-weight: 700;">Надежно, качественно, быстро, доступно и без проблем!</h1>-->
-<!--&lt;!&ndash;						<div class="banner_price"><span>$530</span>$460</div>&ndash;&gt;-->
-<!--&lt;!&ndash;						<div class="banner_product_name">Apple Iphone 6s</div>&ndash;&gt;-->
-<!--						<div class="button banner_button"><a href="#">В каталог</a></div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
 
   <b-row class="carusel-row">
       <b-col offset="0" offset-lg="3">
@@ -37,17 +22,17 @@
       <b-carousel-slide
         caption="First slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="images/voda-fon.jpg"
+        img-src="/images/voda-fon.jpg"
       ></b-carousel-slide>
           <b-carousel-slide
         caption="Second slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="images/banner_1.jpg"
+        img-src="/images/banner_1.jpg"
       ></b-carousel-slide>
           <b-carousel-slide
         caption="Second slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="images/blog_single_background.jpg"
+        img-src="/images/blog_single_background.jpg"
       ></b-carousel-slide>
     </b-carousel>
 
@@ -67,7 +52,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_1.png" alt=""></div>
+						<div class="char_icon"><img src="/images/char_1.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Доставка</div>
 							<div class="char_subtitle">от 200 бел. рублей</div>
@@ -79,7 +64,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_2.png" alt=""></div>
+						<div class="char_icon"><img src="/images/char_2.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Гарантия</div>
 							<div class="char_subtitle">до 5 лет*</div>
@@ -92,7 +77,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_3.png" alt=""></div>
+						<div class="char_icon"><img src="/images/char_3.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Цена</div>
 							<div class="char_subtitle">лучшая на рынке</div>
@@ -105,7 +90,7 @@
 				<div class="col-lg-3 col-md-6 char_col">
 
 					<div class="char_item d-flex flex-row align-items-center justify-content-start">
-						<div class="char_icon"><img src="images/char_4.png" alt=""></div>
+						<div class="char_icon"><img src="/images/char_4.png" alt=""></div>
 						<div class="char_content">
 							<div class="char_title">Новые</div>
 							<div class="char_subtitle">Бренды, первый поставщик</div>
@@ -131,14 +116,14 @@
 
 						<div class="owl-carousel owl-theme brands_slider">
 
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_1.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_2.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_3.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_4.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_5.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_6.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_7.jpg" alt=""></div></div>
-							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="images/brands_8.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_1.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_2.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_3.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_4.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_5.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_6.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_7.jpg" alt=""></div></div>
+							<div class="owl-item"><div class="brands_item d-flex flex-column justify-content-center"><img src="/images/brands_8.jpg" alt=""></div></div>
 
 						</div>
 

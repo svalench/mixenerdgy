@@ -4,8 +4,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div><a href="tel:+375173926366">+375173926366</a></div>
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:mixenerdgy@gmail.com">mixenerdgy@mail.ru</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/phone.png" alt=""></div><a href="tel:+375173926366">+375173926366</a></div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/mail.png" alt=""></div><a href="mailto:mixenerdgy@gmail.com">mixenerdgy@mail.ru</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
 								<ul class="standard_dropdown top_bar_dropdown">
@@ -19,7 +19,7 @@
 								</ul>
 							</div>
 							<div class="top_bar_user">
-								<div class="user_icon"><img src="images/user.svg" alt=""></div>
+								<div class="user_icon"><img src="/images/user.svg" alt=""></div>
 								<div><a href="#">Register</a></div>
 								<div><a href="#">Sign in</a></div>
 							</div>

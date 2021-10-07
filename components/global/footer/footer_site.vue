@@ -31,17 +31,6 @@
 
 				</div>
 
-<!--				<div class="col-lg-2">-->
-<!--					<div class="footer_column">-->
-<!--						<ul class="footer_list footer_list_2">-->
-<!--							<li><a href="#">Video Games & Consoles</a></li>-->
-<!--							<li><a href="#">Accessories</a></li>-->
-<!--							<li><a href="#">Cameras & Photos</a></li>-->
-<!--							<li><a href="#">Hardware</a></li>-->
-<!--							<li><a href="#">Computers & Laptops</a></li>-->
-<!--						</ul>-->
-<!--					</div>-->
-<!--				</div>-->
 
 				<div class="col-lg-2">
 					<div class="footer_column">
