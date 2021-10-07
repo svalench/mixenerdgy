@@ -49,17 +49,17 @@ export default {
   },
   async fetch(){
     this.cat = this.$route.params.id;
+    this.currentPage = this.$route.query['page']?this.$route.query['page']:1;
     await this.getPorductsList()
   },
   methods:{
     paginate(){
-      this.offset = (this.currentPage-1)*this.limit;
-      console.log(this.offset)
-      console.log(this.currentPage)
+      this.$router.push({ path: this.$route.path, query: { page: this.currentPage }})
       this.getPorductsList()
     },
     async getPorductsList(){
       let params = '';
+      this.offset = (this.currentPage-1)*this.limit;
       if(this.cat!==null){
         params += `&parent__category=${this.cat}`
       }
