@@ -16,6 +16,17 @@
           </b-card>
         </div>
       </div>
+      <div class="paginator">
+       <b-pagination
+      v-model="currentPage"
+      :total-rows="count"
+      :per-page="limit"
+      @input="paginate()"
+      align="center"
+      first-number
+        last-number
+    ></b-pagination>
+        </div>
     </div>
   </div>
 </div>
@@ -28,6 +39,7 @@ export default {
   components: {my_filter},
   data(){
     return{
+      currentPage: 1,
       limit:6,
       offset:0,
       cat:null,
@@ -40,12 +52,20 @@ export default {
     await this.getPorductsList()
   },
   methods:{
+    paginate(){
+      this.offset = (this.currentPage-1)*this.limit;
+      console.log(this.offset)
+      console.log(this.currentPage)
+      this.getPorductsList()
+    },
     async getPorductsList(){
       let params = '';
       if(this.cat!==null){
         params += `&parent__category=${this.cat}`
       }
       let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`);
+      console.log(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`)
+      console.log(data)
       this.count = data.data.count
       this.products = data.data.results
     }
@@ -54,5 +74,8 @@ export default {
 </script>
 
 <style scoped>
-
+.paginator{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 </style>
