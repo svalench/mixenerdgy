@@ -2,7 +2,7 @@
 <div class="container" >
   <div class="row">
     <div class="col-1 d-xs-block d-sm-none" > > </div>
-    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none"  style="max-height: 100vh; overflow: auto;">
+    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none filterblock"  style="max-height: 100vh; overflow: auto;">
     <my_filter></my_filter>
     </div>
     <div class="col">
@@ -73,5 +73,21 @@ export default {
 .paginator{
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.filterblock::-webkit-scrollbar {
+  width: 10px;
+  background-color: #6e97dc;
+}
+
+.filterblock::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0e8ce4;
+}
+
+.filterblock::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #b7def3;
 }
 </style>

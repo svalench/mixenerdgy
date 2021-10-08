@@ -8,7 +8,19 @@
 <!--      {{product.characteristics_norm[0].characterisitc.name}}  {{product.characteristics_norm[0].value}}-->
 <!--    </b-card-text>-->
   <template #footer>
-        <b-button style="background-color: #0d82d3" type="primary">подробнее</b-button>
+    <div class="row">
+      <div class="col">
+        <b-button size="sm" style="background-color: #0d82d3" type="primary">подробнее</b-button>
+      </div>
+      <div class="col">
+        <div><span v-if="product.price>0">{{product.price}}</span></div>
+        <div><span v-if="product.price<=0 || product.count<=0" style="font-size: 10px; line-height: 0.0002;">
+          <span v-if="product.count<=0">Наличие</span>  <span v-if="product.price<=0">Цену</span>
+          уточняйте</span></div>
+      </div>
+    </div>
+
+
       </template>
 </b-card>
 </template>
@@ -23,6 +35,7 @@ export default {
 <style scoped>
 .card-product img{
   width: 50%;
+  padding: 5%;
   margin-left: 25%;
 }
 .card-product{
