@@ -9,7 +9,7 @@
 							<div class="logo"><a href="#">ООО "Миксэнерджи" &trade;</a></div>
 						</div>
 						<div class="footer_title">Остались вопросы? Позвоните нам!</div>
-						<div class="footer_phone">+3758956458</div>
+            <div class="footer_phone"><a href="tel:+375173926366">+375173926366</a></div>
 						<div class="footer_contact_text">
 							<p>Машиносотрителей 16 офис 32</p>
 							<p>г. Минск, Республика Беларусь</p>
