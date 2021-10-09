@@ -48,9 +48,16 @@ export default {
     this.currentPage = this.$route.query['page']?this.$route.query['page']:1;
     await this.getPorductsList()
   },
+  watch:{
+    '$route.query'(nv){
+      this.currentPage = nv.page?nv.page:1;
+      this.getPorductsList()
+    }
+  },
   methods:{
     paginate(){
-      this.$router.push({ path: this.$route.path, query: { page: this.currentPage }})
+      this.$router.push({ path: this.$route.path,
+        query: { page: this.currentPage, filter: this.$route.query.filter?this.$route.query.filter:[] }})
       this.getPorductsList()
     },
     async getPorductsList(){
@@ -59,10 +66,20 @@ export default {
       if(this.cat!==null){
         params += `&parent__category=${this.cat}`
       }
+      if(this.$route.query.filter){
+        console.log(this.$route.query.filter)
+        if(Array.isArray(this.$route.query.filter)){
+          for(let c of this.$route.query.filter){
+          params += `&characteristics=${c}`
+        }
+        }else{
+          params += `&characteristics=${this.$route.query.filter}`
+        }
+
+      }
       let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`);
-      console.log(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`)
-      console.log(data)
       this.count = data.data.count
+      console.log(this.count)
       this.products = data.data.results
     }
   }
