@@ -7,7 +7,7 @@
 					<div class="col-10 col-lg-3 col-xl-3 order-1">
 						<div class="logo_container">
 <!--							<div class="logo"><a href="#"><span style="border-radius:5px; padding: 2px; color: whitesmoke; background-color: #0e8ce4">Mix</span>Enerdgy<span><i class="fas fa-tint"></i></span> </a></div>-->
-							<div class="logo"><a href="#"><img class="logo-image"  src="logo/logo.svg"></a></div>
+							<div class="logo"><a href="#"><img class="logo-image"  src="/logo/logo.svg"></a></div>
 						</div>
 					</div>
 
