@@ -61,26 +61,43 @@ export default {
     await this.getCategories()
   },
   methods:{
+    /**
+     *  переход в категорию
+     * @param id
+     */
     gotocat(id){
       this.$router.push(`/catalog/${id}`)
     },
+    /**
+     * получение категорий с API
+     * @returns {Promise<void>}
+     */
     async getCategories(){
         let data = await this.$axios.get('/catalog/categories/');
         this.categories = data.data.results;
     },
+    /**
+     * not ued todo delete this
+     */
     showSeted(){
       this.timer = setTimeout(()=>{
         this.tempSecondCat = JSON.parse(JSON.stringify(this.seted))
       },200)
 
     },
+    /**
+     * todo delete
+     * @param cat
+     */
     showSecondLevel(cat){
       clearTimeout(this.timer)
       this.tempSecondCat = JSON.parse(JSON.stringify(cat.child))
     },
+    /**
+     * not ued todo delete this
+     */
     saveCatShow(e,cat){
        clearTimeout(this.timer)
-
       this.showSeted()
       let arrr = document.getElementsByClassName('active-menu')
       if(e.path[0].classList.contains('active-menu')){
@@ -94,6 +111,9 @@ export default {
         e.path[0].classList.add('active-menu')
       }
     },
+    /**
+     * not ued todo delete this
+     */
     hideSelected(){
       if(this.tempSecondCat.length) {
         this.$refs.menu.classList.remove('active-menu-list')
@@ -101,12 +121,14 @@ export default {
       }
        this.showSeted()
     },
+    /**
+     * not ued todo delete this
+     */
     saveSelected(){
       if(this.tempSecondCat.length){
         this.$refs.menu.classList.add('active-menu-list')
         this.$refs.cats.classList.add('global-childcat-hover')
       }
-
       clearTimeout(this.timer)
     }
   }
