@@ -6,11 +6,13 @@
     <my_filter></my_filter>
     </div>
     <div class="col">
+      <b-overlay :show="show" rounded="sm" :class="show?'spiner-show':''">
       <div class="row">
         <div class="col-12 col-lg-4" v-for="(p,k) in products" :key="k">
           <catalog_card :product="p"></catalog_card>
         </div>
       </div>
+        </b-overlay>
       <div class="paginator">
        <b-pagination
       v-model="currentPage"
@@ -35,6 +37,7 @@ export default {
   components: {Catalog_card, my_filter},
   data(){
     return{
+      show:false,
       currentPage: 1,
       limit:9,
       offset:0,
@@ -61,13 +64,13 @@ export default {
       this.getPorductsList()
     },
     async getPorductsList(){
+      this.show = true;
       let params = '';
       this.offset = (this.currentPage-1)*this.limit;
       if(this.cat!==null){
         params += `&parent__category=${this.cat}`
       }
       if(this.$route.query.filter){
-        console.log(this.$route.query.filter)
         if(Array.isArray(this.$route.query.filter)){
           for(let c of this.$route.query.filter){
           params += `&characteristics=${c}`
@@ -79,14 +82,18 @@ export default {
       }
       let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`);
       this.count = data.data.count
-      console.log(this.count)
       this.products = data.data.results
+      this.show = false;
     }
   }
 }
 </script>
 
 <style scoped>
+.spiner-show{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 .paginator{
   margin-top: 20px;
   margin-bottom: 10px;
