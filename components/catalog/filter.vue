@@ -29,10 +29,10 @@
               <b-badge >{{selected}}</b-badge>
             </div>
           </b-card>
-            <b-card title="Фильтр">
-         <b-card  v-for="(f,n) in filters" :key="n" no-body class="mb-1">
-      <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block @click="openAccordion(n)" variant="outline-primary" style=" white-space: pre-line;"> {{f.name}}</b-button>
+            <b-card title="Фильтр" style="background-color: white">
+         <b-card  v-for="(f,n) in filters" :key="n" no-body class="mb-1" style="background-color: white">
+      <b-card-header style="background-color: white"  class="p-1" role="tab">
+        <b-button block @click="openAccordion(n)" size="sm" variant="outline-primary" style=" white-space: pre-line;"> {{f.name}}</b-button>
       </b-card-header>
       <b-collapse :id="'accordion-'+n" accordion="my-accordion" role="tabpanel">
         <b-card-body>
