@@ -111,8 +111,6 @@ export default {
         }else {
           this.selected_filters = this.all_filters.filter(x=>this.selected===""+x.id)
         }
-        console.log(this.selected_filters)
-        console.log('sdf')
       },
       /**
        * добавление фильтров в путь
