@@ -54,7 +54,11 @@ export default {
 
 <style scoped>
 .card-product img{
-  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 170px;
   padding: 5%;
    object-fit: contain;
 
