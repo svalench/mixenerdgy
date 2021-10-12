@@ -73,10 +73,10 @@ export default {
       if(this.$route.query.filter){
         if(Array.isArray(this.$route.query.filter)){
           for(let c of this.$route.query.filter){
-          params += `&characteristics=${c}`
+          params += `&filter_ch=${c}`
         }
         }else{
-          params += `&characteristics=${this.$route.query.filter}`
+          params += `&filter_ch=${this.$route.query.filter}`
         }
 
       }
