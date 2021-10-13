@@ -15,6 +15,26 @@
       <b-row>
         <div style="width: 100%; font-weight: 600;"> <h5 style="font-size: 28px;">Артикул: {{product.article}}</h5></div>
       </b-row>
+      <div class="row" style="margin-top: 5%;">
+        <div class="col-4 offset-3">
+          <b-input-group  >
+            <b-input-group-prepend>
+              <b-btn @click="count--" variant="outline-primary" size="sm" >-</b-btn>
+            </b-input-group-prepend>
+            <b-form-input type="number" size="sm" style="color: #333333; text-align: center;" min="0.0" v-model="count"></b-form-input>
+            <b-input-group-append>
+              <b-btn @click="count++" variant="outline-primary" size="sm" >+</b-btn>
+            </b-input-group-append>
+          </b-input-group>
+        </div>
+        <div class="col-5" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
+           <b-button variant="outline-primary" size="sm" >
+            <div class="row" style="white-space: pre-line; text-align: center; font-size: 14px; font-weight: 500;">
+              <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">Добавить в  корзину</div>
+            </div>
+          </b-button>
+        </div>
+      </div>
       <b-row>
         {{product.description}}
       </b-row>
@@ -34,12 +54,20 @@ export default {
   components: {Tabs_product},
   data(){
     return{
+      count:0,
       product:[],
       fortabs:[],
     }
   },
   async fetch(){
     await this.getProduct();
+  },
+   watch:{
+    count(nv){
+      if(nv<0){
+        this.count=0;
+      }
+    }
   },
   methods:{
     async getProduct(){

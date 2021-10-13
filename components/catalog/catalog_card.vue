@@ -26,7 +26,6 @@
         <div class="col-6" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
            <b-button variant="outline-primary" size="sm" >
             <div class="row" style="white-space: pre-line; text-align: center; font-size: 14px; font-weight: 500;">
-<!--              <div class="col-1"> <i class="fas fa-cart-plus" style="font-size: 15px;"></i></div>-->
               <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">В корзину</div>
             </div>
           </b-button>
