@@ -1,12 +1,15 @@
 <template>
 <b-card class="card-product"
-  :img-src="`https://api.mixenerdgy.by/media/${product.img}`"
-  :title="product.name"
   :img-alt="product.name"
   >
 <!--  <b-card-text>-->
 <!--      {{product.characteristics_norm[0].characterisitc.name}}  {{product.characteristics_norm[0].value}}-->
 <!--    </b-card-text>-->
+
+  <nuxt-link :to="`/catalog/product/${product.id}/`">
+    <b-card-img :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-card-img>
+  </nuxt-link>
+  <nuxt-link :to="`/catalog/product/${product.id}/`"><b-card-title>{{product.name}}</b-card-title></nuxt-link>
    <b-card-text>
       <div class="row">
         <div class="col-6 ">
@@ -38,16 +41,16 @@
 
 
    </b-card-text>
-  <template #footer>
+
+  <template #footer><nuxt-link :to="`/catalog/product/${product.id}/`">
     <div class="row">
       <div class="col-6 offset-3">
         <b-button size="sm" style="background-color: #0d82d3; font-size: 16px;" type="primary">подробнее</b-button>
       </div>
 
     </div>
+     </nuxt-link> </template>
 
-
-      </template>
 </b-card>
 </template>
 
