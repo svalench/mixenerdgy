@@ -27,7 +27,7 @@
 
 @media only screen and (max-width: 1600px)
 {
-	
+
 }
 
 /************
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 1440px)
 {
-	
+
 }
 
 /************
@@ -45,7 +45,7 @@
 
 @media only screen and (max-width: 1380px)
 {
-	
+
 }
 
 /************
@@ -54,7 +54,7 @@
 
 @media only screen and (max-width: 1280px)
 {
-	
+
 }
 
 /************
@@ -117,7 +117,7 @@
 
 @media only screen and (max-width: 1100px)
 {
-	
+
 }
 
 /************
@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 1024px)
 {
-	
+
 }
 
 /************
@@ -302,7 +302,9 @@
 
 @media only screen and (max-width: 959px)
 {
-	
+ .page{
+   margin-top: 40vh;
+ }
 }
 
 /************
@@ -311,7 +313,7 @@
 
 @media only screen and (max-width: 880px)
 {
-	
+
 }
 
 /************
@@ -320,7 +322,7 @@
 
 @media only screen and (max-width: 768px)
 {
-	
+
 }
 
 /************
@@ -539,7 +541,7 @@
 	{
 		font-size: 14px;
 	}
-	.shop_product_count, 
+	.shop_product_count,
 	.shop_sorting
 	{
 		float: none;
@@ -622,13 +624,13 @@
 	{
 		position: relative;
 		width: 40px;
-		top: auto; 
-		-webkit-transform: translate(-50%, 0px); 
-		-moz-transform: translate(-50%, 0px); 
-		-ms-transform: translate(-50%, 0px); 
-		-o-transform: translate(-50%, 0px); 
-		transform: translate(-50%, 0px); 
-		left: 50%; 
+		top: auto;
+		-webkit-transform: translate(-50%, 0px);
+		-moz-transform: translate(-50%, 0px);
+		-ms-transform: translate(-50%, 0px);
+		-o-transform: translate(-50%, 0px);
+		transform: translate(-50%, 0px);
+		left: 50%;
 		margin-bottom: 20px;
 	}
 	.newsletter_button
@@ -675,9 +677,9 @@
 	.newsletter_input::-moz-placeholder
 	{
 		font-size: 13px;
-	} 
+	}
 	.newsletter_input:-ms-input-placeholder
-	{ 
+	{
 		font-size: 13px;
 	}
 	.newsletter_input::input-placeholder
@@ -702,7 +704,7 @@
 
 @media only screen and (max-width: 539px)
 {
-	
+
 }
 
 /************
@@ -723,7 +725,7 @@
 
 @media only screen and (max-width: 479px)
 {
-	
+
 }
 
 /************
@@ -732,5 +734,5 @@
 
 @media only screen and (max-width: 400px)
 {
-	
+
 }

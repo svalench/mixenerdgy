@@ -506,7 +506,8 @@ section
 
 .header_main
 {
-	z-index: 1;
+	z-index: 999;
+  background-color: white;
 }
 .header.scrolled .header_main
 {
@@ -3701,6 +3702,7 @@ body{
 }
 .page{
   min-height: 80vh;
+  position: relative;
 }
 .page-enter-active,
 .page-leave-active {

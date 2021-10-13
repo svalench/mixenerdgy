@@ -8,16 +8,34 @@
 <!--      {{product.characteristics_norm[0].characterisitc.name}}  {{product.characteristics_norm[0].value}}-->
 <!--    </b-card-text>-->
    <b-card-text>
-
-          <b-input-group >
+      <div class="row">
+        <div class="col-6 ">
+          <b-input-group  >
             <b-input-group-prepend>
-              <b-btn @click="count--" variant="outline-warning">-</b-btn>
+              <b-btn @click="count--" variant="outline-primary" size="sm" >-</b-btn>
             </b-input-group-prepend>
-            <b-form-input type="number" style="color: #333333; text-align: center;" min="0.0" v-model="count"></b-form-input>
+            <b-form-input type="number" size="sm" style="color: #333333; text-align: center;" min="0.0" v-model="count"></b-form-input>
             <b-input-group-append>
-              <b-btn @click="count++" variant="outline-info">+</b-btn>
+              <b-btn @click="count++" variant="outline-primary" size="sm" >+</b-btn>
             </b-input-group-append>
           </b-input-group>
+        </div>
+        <div class="col-6" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
+           <b-button variant="outline-primary" size="sm" >
+            <div class="row" style="white-space: pre-line; text-align: center; font-size: 14px; font-weight: 500;">
+<!--              <div class="col-1"> <i class="fas fa-cart-plus" style="font-size: 15px;"></i></div>-->
+              <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">В корзину</div>
+            </div>
+          </b-button>
+        </div>
+      </div>
+
+        <div class="row" style="margin-top:10px;">
+          <div class="col-10">
+
+        </div>
+      </div>
+
 
    </b-card-text>
   <template #footer>
@@ -57,8 +75,8 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 170px;
+  width: 60%;
+  height: 150px;
   padding: 5%;
    object-fit: contain;
 
@@ -74,7 +92,7 @@ export default {
 .card-title{
   text-align: center;
   font-size: 15px;
-  height: 80px;
+  height: 60px;
   display: table-cell;
   vertical-align: middle;
 }

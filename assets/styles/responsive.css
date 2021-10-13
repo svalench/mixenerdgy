@@ -121,7 +121,9 @@
 
 @media only screen and (max-width: 1024px)
 {
-
+.page{
+   margin-top: 40vh;
+ }
 }
 
 /************
@@ -130,6 +132,9 @@
 
 @media only screen and (max-width: 991px)
 {
+  .page{
+   margin-top: 40vh;
+ }
 	.top_bar
 	{
 		/*display: none;*/
