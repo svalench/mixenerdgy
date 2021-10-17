@@ -18,8 +18,12 @@
 									<li class="hassubs" v-for="(i,k) in menu"  :key="k">
 										<a href="#">{{i.name}}<i class="fas fa-chevron-right"></i></a>
 										<ul>
-                      <li v-for="(j,k) in i.child" :key="k"><nuxt-link :to="`/catalog/${j.id}`"><a href="#">{{j.name}}<i class="fas fa-chevron-right"></i></a></nuxt-link></li>
-										</ul>
+                      <div class="row">
+                        <div class="col-3" v-for="(j,k) in i.child" :key="k">
+                      <li ><nuxt-link :to="`/catalog/${j.id}`"><a href="#">{{j.name}}<i class="fas fa-chevron-right"></i></a></nuxt-link></li>
+										  </div>
+                        </div>
+                    </ul>
 									</li>
 								</ul>
 							</div>

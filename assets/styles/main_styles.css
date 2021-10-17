@@ -1000,7 +1000,8 @@ select option
 	left: 100%;
 	visibility: hidden;
 	opacity: 0;
-	width: 100%;
+	    width: 65vw;
+  white-space: pre-line;
 	background: #FFFFFF;
 	box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
 }
