@@ -2,12 +2,15 @@
 <div>
   <b-container>
   <b-row><h1>{{product.name}}</h1></b-row>
+
   <b-row>
     <b-col>
       <b-row>
         <b-col><b-img style="margin-top: 10%;" height="300" :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-img></b-col>
         <b-col>
-          <div v-for="i in 3" style="display: block; width: 100%; height: 100px; background-color: #333333; margin-top: 20%;"></div>
+         <div v-for="(i,k) in product.images" :key="k" style="display: block; background-color: #333333; margin-top: 20%;">
+            <b-img style="margin-top: 10%;"  @click="index = k" fluid :src="`${i.img}`"></b-img>
+          </div>
         </b-col>
       </b-row>
     </b-col>
@@ -35,8 +38,8 @@
           </b-button>
         </div>
       </div>
-      <b-row>
-        {{product.description}}
+      <b-row style="padding: 5%; margin-top: 10%; text-align: left;">
+        {{product.card?product.card.description:'нет описания'}}
       </b-row>
     </b-col>
   </b-row>
@@ -57,6 +60,7 @@ export default {
       count:0,
       product:[],
       fortabs:[],
+      index: null,
     }
   },
   async fetch(){
@@ -75,7 +79,7 @@ export default {
       this.product = data.data;
       console.log(this.product);
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
-      this.fortabs.push({name: 'Описание', data: this.product.description})
+      this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
     }
   }
 }

@@ -77,7 +77,7 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   height: 150px;
   padding: 5%;
    object-fit: contain;
@@ -86,7 +86,7 @@ export default {
 .card-product{
   cursor: pointer;
   margin-bottom: 10%;
-  transition: all .4s;
+  transition: all .2s;
 }
 .card-product:hover{
   box-shadow: 5px 5px 20px #0d82d3;
