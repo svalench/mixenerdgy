@@ -570,7 +570,7 @@ section
 {
 	display: block;
 	position: relative;
-	width: calc((100%) * 0.601);
+	width: calc((100%) * 0.91);
 	height: 100%;
 	line-height: 50px;
 	border: none !important;
@@ -916,6 +916,7 @@ select option
 	margin-left: 20px;
 }
 .hidemenu ul{
+  animation-delay: 250ms;
   visibility: hidden;
 	opacity: 0;
 }
@@ -928,11 +929,11 @@ select option
 	min-width: 100%;
 	background: #FFFFFF;
 	box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
-	-webkit-transition: opacity 0.7s ease;
-    -moz-transition: opacity 0.7s ease;
-    -ms-transition: opacity 0.7s ease;
-    -o-transition: opacity 0.7s ease;
-    transition: all 0.4s ease;
+	-webkit-transition: opacity 0.2s ;
+    -moz-transition: opacity 0.2s ;
+    -ms-transition: opacity 0.2s ;
+    -o-transition: opacity 0.2s ;
+    transition: all 0.2s;
 }
 .cat_menu_container > ul
 {
