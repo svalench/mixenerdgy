@@ -34,14 +34,14 @@
 								<ul class="standard_dropdown main_nav_dropdown">
 									<li><nuxt-link to="/">Главная<i class="fas fa-chevron-down"></i></nuxt-link></li>
                   <li><nuxt-link to="/catalog">Каталог<i class="fas fa-chevron-down"></i></nuxt-link></li>
-									<li class="hassubs">
-										<a href="#">Дилерам в РБ<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li><a href="#">как стать дилером<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="#">форма заявки<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="#">преимущества<i class="fas fa-chevron-down"></i></a></li>
-										</ul>
-									</li>
+<!--									<li class="hassubs">-->
+<!--										<a href="#">Дилерам в РБ<i class="fas fa-chevron-down"></i></a>-->
+<!--										<ul>-->
+<!--											<li><a href="#">как стать дилером<i class="fas fa-chevron-down"></i></a></li>-->
+<!--											<li><a href="#">форма заявки<i class="fas fa-chevron-down"></i></a></li>-->
+<!--											<li><a href="#">преимущества<i class="fas fa-chevron-down"></i></a></li>-->
+<!--										</ul>-->
+<!--									</li>-->
 									<li><nuxt-link to="/certificates">Сертификаты<i class="fas fa-chevron-down"></i></nuxt-link></li>
                   <li><nuxt-link to="/contact">Контакты<i class="fas fa-chevron-down"></i></nuxt-link></li>
 								</ul>
@@ -74,24 +74,24 @@ export default {
     }
   },
   watch:{
-    '$route.path'(nv) {
-      var menu = this.$refs.menu;
-      if(nv==='/'){
-        menu.classList.remove('hidemenu')
-      }else{
-        menu.classList.add('hidemenu')
-      }
-    }
+    // '$route.path'(nv) {
+    //   var menu = this.$refs.menu;
+    //   if(nv==='/'){
+    //     menu.classList.remove('hidemenu')
+    //   }else{
+    //     menu.classList.add('hidemenu')
+    //   }
+    // }
   },
   async fetch(){
     await this.getCategories()
 
   },
   mounted() {
-      if(this.$route.path==='/'){
-        var menu = this.$refs.menu;
-        menu.classList.remove('hidemenu')
-      }
+      // if(this.$route.path==='/'){
+      //   var menu = this.$refs.menu;
+      //   menu.classList.remove('hidemenu')
+      // }
   },
   methods:{
     async getCategories(){

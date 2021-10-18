@@ -4,13 +4,17 @@
   <b-row><h1>{{product.name}}</h1></b-row>
 
   <b-row>
-    <b-col>
+    <b-col cols="7">
       <b-row>
-        <b-col><b-img style="margin-top: 10%;" height="300" :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-img></b-col>
-        <b-col>
-         <div v-for="(i,k) in product.images" :key="k" style="display: block; background-color: #333333; margin-top: 20%;">
-            <b-img style="margin-top: 10%;"  @click="index = k" fluid :src="`${i.img}`"></b-img>
-          </div>
+        <b-col cols="6"><b-img class="ima_preview" fluid style="margin-top: 15%;" :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-img></b-col>
+        <b-col cols="6">
+          <b-row>
+
+           <b-col cols="5" offset="1" class="images_card" v-for="(i,k) in product.images" :key="k" style="display: block; margin-top: 15%;">
+            <b-img  @click="index = k" fluid :src="`${i.img}`"></b-img>
+             </b-col>
+
+            </b-row>
         </b-col>
       </b-row>
     </b-col>
@@ -39,7 +43,7 @@
         </div>
       </div>
       <b-row style="padding: 5%; margin-top: 10%; text-align: left;">
-        {{product.card?product.card.description:'нет описания'}}
+         <div><li v-for="(d,c) in product.characteristics_norm" :key="c">{{d.characterisitc.name}}: {{d.value}}</li></div>
       </b-row>
     </b-col>
   </b-row>
@@ -86,5 +90,18 @@ export default {
 </script>
 
 <style scoped>
-
+.ima_preview{
+   transition: .4s;
+  cursor: pointer;
+  border: #0d82d3 solid 1px;
+}
+.images_card{
+  transition: .4s;
+  cursor: pointer;
+  border: #0d82d3 solid 1px;
+}
+.images_card:hover{
+  box-shadow: 10px 12px 14px #0e8ce4;
+  color: #0d82d3;
+}
 </style>

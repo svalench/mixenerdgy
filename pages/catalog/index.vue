@@ -11,7 +11,7 @@
       <div class="row">
         <div v-if="tempSecondCat.length">
           <div class="col-4" v-for="(i,k) in tempSecondCat" :key="k">
-            <b-card class=" card-style-subcat" @click="gotocat(i.id)">
+            <b-card class=" card-style-subcat"  style="text-align: center;" @click="gotocat(i.id)">
               <b-card-header>{{i.name}}</b-card-header>
               <b-card-body>
               </b-card-body>
@@ -137,8 +137,8 @@ export default {
 
 <style scoped>
 .card-style-subcat img{
-  width: 50%;
-  margin-left: 25%;
+  width: 30%;
+  margin-left: 33%;
 }
 .global-childcat{
   padding: 10px;
@@ -176,5 +176,8 @@ export default {
 .active-menu{
    color: whitesmoke;
   background-color: #0d82d3;
+}
+h4{
+  text-align: center;
 }
 </style>

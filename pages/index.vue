@@ -5,7 +5,7 @@
 	<div class="banner container" style="">
 
   <b-row class="carusel-row">
-      <b-col offset="0" offset-lg="3">
+      <b-col offset="0">
         <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -13,8 +13,7 @@
       controls
       indicators
       background="#ababab"
-      img-width="1024"
-      img-height="480"
+
       style="text-shadow: 1px 1px 2px #333;"
 
     >
@@ -22,7 +21,7 @@
       <b-carousel-slide
         caption="First slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/images/voda-fon.jpg"
+        img-src="/img/tania_rekalama.jpg"
       ></b-carousel-slide>
           <b-carousel-slide
         caption="Second slide"
@@ -155,9 +154,9 @@ export default {
 </script>
 <style>
 .carusel-row{
-  max-height: 400px;
+  max-height: 600px;
 }
 .carusel-row img {
-  max-height: 300px;
+  /*max-height: 300px;*/
 }
 </style>
