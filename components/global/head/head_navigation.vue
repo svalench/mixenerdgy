@@ -30,7 +30,7 @@
 
 							<!-- Main Nav Menu -->
 
-							<div class="main_nav_menu ml-auto">
+							<div class="main_nav_menu ">
 								<ul class="standard_dropdown main_nav_dropdown">
 									<li><nuxt-link to="/">Главная<i class="fas fa-chevron-down"></i></nuxt-link></li>
                   <li><nuxt-link to="/catalog">Каталог<i class="fas fa-chevron-down"></i></nuxt-link></li>
@@ -43,6 +43,7 @@
 <!--										</ul>-->
 <!--									</li>-->
 									<li><nuxt-link to="/certificates">Сертификаты<i class="fas fa-chevron-down"></i></nuxt-link></li>
+									<li><nuxt-link to="/about">О нас<i class="fas fa-chevron-down"></i></nuxt-link></li>
                   <li><nuxt-link to="/contact">Контакты<i class="fas fa-chevron-down"></i></nuxt-link></li>
 								</ul>
 							</div>

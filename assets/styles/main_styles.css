@@ -426,7 +426,7 @@ section
 	-ms-transition: opacity 0.3s ease;
 	-o-transition: opacity 0.3s ease;
 	transition: all 0.3s ease;
-	z-index: 1;
+	z-index: 1000;
 }
 .standard_dropdown li:hover > ul
 {
@@ -506,7 +506,6 @@ section
 
 .header_main
 {
-	z-index: 999;
   background-color: white;
 }
 .header.scrolled .header_main

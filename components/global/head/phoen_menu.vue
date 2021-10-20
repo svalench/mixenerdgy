@@ -14,7 +14,7 @@
 							<ul class="page_menu_nav">
 								<li class="page_menu_item has-children">
 									<a href="#">График работы<i class="fa fa-angle-down"></i></a>
-									<ul class="page_menu_selection">
+									<ul class="page_menu_selection" style="z-index: 99999;">
 										<li><a href="#">понедельник-пятница - с 8.30 до 17.30<i class="fa fa-angle-down"></i></a></li>
 										<li><a href="#">суббота-воскресенье - выходной<i class="fa fa-angle-down"></i></a></li>
 									</ul>

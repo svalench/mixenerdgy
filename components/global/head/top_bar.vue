@@ -12,17 +12,22 @@
 									<li>
 										<span><i class="far fa-clock"></i><a style="display: inline-block; margin-left: 5px;" href="#">8.30-17.30<i class="fas fa-chevron-down"></i></a></span>
 										<ul>
-											<li style="width: 300px; padding: 5%;">Понедельник-пятница  - с 8.30 до 17.30</li>
-											<li style="width: 300px; padding: 5%;">суббота, воскресенье  -  Выходной</li>
+											<li class="timework_line">Понедельник  - с 8.30 до 17.30</li>
+											<li class="timework_line">Вторник  - с 8.30 до 17.30</li>
+											<li class="timework_line">Среда  - с 8.30 до 17.30</li>
+											<li class="timework_line">Четверг  - с 8.30 до 17.30</li>
+											<li class="timework_line">Пятница  - с 8.30 до 17.30</li>
+											<li class="timework_line">Суббота  -  Выходной</li>
+											<li class="timework_line">Воскресенье  -  Выходной</li>
 										</ul>
 									</li>
 								</ul>
 							</div>
-							<div class="top_bar_user">
-								<div class="user_icon"><img src="/images/user.svg" alt=""></div>
-								<div><a href="#">Register</a></div>
-								<div><a href="#">Sign in</a></div>
-							</div>
+<!--							<div class="top_bar_user">-->
+<!--								<div class="user_icon"><img src="/images/user.svg" alt=""></div>-->
+<!--								<div><a href="#">Register</a></div>-->
+<!--								<div><a href="#">Sign in</a></div>-->
+<!--							</div>-->
 						</div>
 					</div>
 				</div>
@@ -38,5 +43,9 @@ export default {
 </script>
 
 <style scoped>
-
+.timework_line{
+  height: 100%;
+  width: 250px;
+  padding-top: 2%;
+}
 </style>
