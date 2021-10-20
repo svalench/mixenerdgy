@@ -19,8 +19,10 @@
 										<a href="#">{{i.name}}<i class="fas fa-chevron-right"></i></a>
 										<ul>
                       <div class="row">
-                        <div class="col-3" v-for="(j,k) in i.child" :key="k">
-                      <li ><nuxt-link :to="`/catalog/${j.id}`"><a href="#">{{j.name}}<i class="fas fa-chevron-right"></i></a></nuxt-link></li>
+                        <div class="col-6" v-for="(j,k) in i.child" :key="k">
+                          <nuxt-link :to="`/catalog/${j.id}`"><b-row><b-col cols="3"><b-img :src="j.img" fluid></b-img></b-col>
+                        <b-col>{{j.name}}</b-col>
+                      </b-row></nuxt-link>
 										  </div>
                         </div>
                     </ul>
@@ -75,24 +77,24 @@ export default {
     }
   },
   watch:{
-    // '$route.path'(nv) {
-    //   var menu = this.$refs.menu;
-    //   if(nv==='/'){
-    //     menu.classList.remove('hidemenu')
-    //   }else{
-    //     menu.classList.add('hidemenu')
-    //   }
-    // }
+    '$route.path'(nv) {
+      var menu = this.$refs.menu;
+      if(nv==='/'){
+        menu.classList.remove('hidemenu')
+      }else{
+        menu.classList.add('hidemenu')
+      }
+    }
   },
   async fetch(){
     await this.getCategories()
 
   },
   mounted() {
-      // if(this.$route.path==='/'){
-      //   var menu = this.$refs.menu;
-      //   menu.classList.remove('hidemenu')
-      // }
+      if(this.$route.path==='/'){
+        var menu = this.$refs.menu;
+        menu.classList.remove('hidemenu')
+      }
   },
   methods:{
     async getCategories(){

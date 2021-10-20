@@ -5,30 +5,34 @@
 	<div class="banner container" style="">
 
   <b-row class="carusel-row">
-      <b-col offset="0">
+      <b-col offset="0" offset-lg="3">
         <b-carousel
       id="carousel-1"
       v-model="slide"
       :interval="4000"
       controls
       indicators
+      img-height="400"
+      img-width="500"
+
       background="#ababab"
 
       style="text-shadow: 1px 1px 2px #333;"
 
     >
       <!-- Text slides with image -->
-      <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/img/tania_rekalama.jpg"
-      ></b-carousel-slide>
+<!--      <b-carousel-slide-->
+<!--        caption="First slide"-->
+<!--        text="Nulla vitae elit libero, a pharetra augue mollis interdum."-->
+<!--        img-src="/img/tania_rekalama.jpg"-->
+<!--      ></b-carousel-slide>-->
           <b-carousel-slide
         caption="Second slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
         img-src="/images/banner_1.jpg"
       ></b-carousel-slide>
           <b-carousel-slide
+
         caption="Second slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
         img-src="/images/blog_single_background.jpg"
@@ -154,9 +158,12 @@ export default {
 </script>
 <style>
 .carusel-row{
-  max-height: 600px;
+  /*max-height: 400px;*/
 }
 .carusel-row img {
-  /*max-height: 300px;*/
+  /*height: 300px;*/
 }
+ .carousel-item img {
+        height:40vh!important ;
+    }
 </style>

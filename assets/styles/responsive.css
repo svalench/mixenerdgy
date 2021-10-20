@@ -65,7 +65,7 @@
 {
 	.cat_menu_container
 	{
-		width: 211px;
+		width: 238px;
 		padding-left: 25px;
 	}
 	.main_nav_dropdown li
@@ -464,12 +464,12 @@
 	}
 	.cart_icon
 	{
-		width: 17px;
+		width: 30px;
 	}
 	.cart_count
 	{
-		width: 21px;
-		height: 21px;
+		width: 15px;
+		height: 15px;
 	}
 	.cart_count span
 	{
