@@ -16,25 +16,30 @@
 						<div class="header_search">
 							<div class="header_search_content">
 								<div class="header_search_form_container">
-									<form action="#" class="header_search_form clearfix">
-										<b-form-input type="search"  required="required" class="header_search_input" placeholder="Введите название или артикул..."></b-form-input>
-
-<!--										<div class="custom_dropdown">-->
-<!--											<div class="custom_dropdown_list">-->
-<!--												<span class="custom_dropdown_placeholder clc">Все</span>-->
-<!--												<i class="fas fa-chevron-down"></i>-->
-<!--												<ul class="custom_list clc">-->
-<!--													<li><a class="clc" href="#">Все</a></li>-->
-<!--													<li><a class="clc" href="#">Категории</a></li>-->
-<!--													<li><a class="clc" href="#">Laptops</a></li>-->
-<!--													<li><a class="clc" href="#">Cameras</a></li>-->
-<!--													<li><a class="clc" href="#">Hardware</a></li>-->
-<!--													<li><a class="clc" href="#">Smartphones</a></li>-->
-<!--												</ul>-->
-<!--											</div>-->
-<!--										</div>-->
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="/images/search.png" alt=""></button>
-									</form>
+									<div action="" class="header_search_form clearfix">
+                    <el-popover
+                      placement="top-start"
+                      width="600"
+                      v-model="visible"
+                       trigger="manual"
+                      >
+                      <el-input type="search" v-model="search" slot="reference" class="header_search_input" style="height: 50px;" placeholder="Введите название или артикул..."></el-input>
+                    <div style="overflow: auto; height: 50vh;">
+                      <el-card v-for="(p,k) in products" :key="k">
+                        <b-row>
+                          <b-col cols="2">
+                            <el-image  :src="`https://api.mixenerdgy.by/media/${p.img}`"></el-image>
+                          </b-col>
+                          <b-col><span>{{p.name}}</span></b-col>
+                          <b-col>
+                             <el-button @click="goToProduct(p.id)" style="float: right; padding: 3px 0" type="text">перейти</el-button>
+                          </b-col>
+                        </b-row>
+                      </el-card>
+                    </div>
+                    </el-popover>
+										<button @click="startSearch"  class="header_search_button trans_300" value="Submit"><img src="/images/search.png" alt=""></button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -65,10 +70,39 @@
 
 <script>
 export default {
-  name: "head_main"
+  name: "head_main",
+  data(){
+    return{
+      visible:false,
+      search:"",
+      products:[],
+      show:false,
+      count:0,
+    }
+  },
+  methods:{
+    startSearch(){
+      this.visible =true;
+      this.searchProducts();
+    },
+    async searchProducts(){
+      this.show = true;
+      let data = await this.$axios.get(`/product/product/?limit=80&search=${this.search}`);
+      this.count = data.data.count
+      this.products = data.data.results
+      this.show = false;
+    },
+    goToProduct(id){
+      this.$router.push(`/catalog/product/${id}/`);
+      this.visible = false;
+    }
+  }
 }
 </script>
 
 <style scoped>
-
+.el-input__inner{
+  height: 50px;
+  line-height: 50px;
+}
 </style>

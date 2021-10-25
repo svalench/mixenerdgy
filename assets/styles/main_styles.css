@@ -589,7 +589,6 @@ section
 	line-height: 50px;
 	border: none !important;
 	outline: none !important;
-	padding-left: 26px;
 	color: #7f7f7f;
 	float: left;
 }
@@ -598,6 +597,7 @@ section
 	font-size: 16px !important;
 	font-weight: 300;
 	line-height: 50px;
+  height: 100%;
 	color: #a3a3a3 !important;
 }
 .header_search_input:-moz-placeholder /* older Firefox*/
@@ -605,6 +605,7 @@ section
 	font-size: 16px !important;
 	font-weight: 300;
 	line-height: 50px;
+  height: 100%;
 	color: #a3a3a3 !important;
 }
 .header_search_input::-moz-placeholder /* Firefox 19+ */
@@ -612,6 +613,7 @@ section
 	font-size: 16px !important;
 	font-weight: 300;
 	line-height: 50px;
+  height: 100%;
 	color: #a3a3a3 !important;
 }
 .header_search_input:-ms-input-placeholder
