@@ -95,7 +95,7 @@ export default {
   text-align: center;
   font-size: 15px;
   height: 60px;
-  display: table-cell;
+  padding-top: 5%;
   vertical-align: middle;
 }
 /* Chrome, Safari, Edge, Opera */

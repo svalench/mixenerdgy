@@ -1,7 +1,7 @@
 <template>
   <div>
     <header_site style="position: fixed;left: 0;top: 0; width: 100%; z-index: 900"></header_site>
-      <div class="page" style="margin-top: 35vh;z-index: 1;">
+      <div class="page1" >
         <Nuxt/>
       </div>
     <footer_site></footer_site>

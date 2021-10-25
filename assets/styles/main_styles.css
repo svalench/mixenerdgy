@@ -234,7 +234,8 @@ section
 	padding: 0px !important;
 }
 .logo-image{
-    width:200px;
+ margin-left: 20%;
+    width:170px;
   }
 .button
 {
@@ -306,7 +307,21 @@ section
     display: none;
   }
   .logo-image{
-    width:130px;
+    margin-left: 5%;
+    width:180px;
+  }
+}
+@media (max-width: 990px) {
+  .logo-image{
+    margin-left: 5%;
+    width:180px;
+  }
+  .main_nav{
+    margin-top: 0px;
+  }
+  .header_search{
+    height: 10px;
+    display: none;
   }
 }
 .top_bar_contact_item:not(:first-child)
@@ -523,7 +538,7 @@ section
 }
 .logo_container
 {
-	height: 100px;
+	height: 80px;
 }
 .logo
 {
@@ -542,7 +557,7 @@ section
 }
 .header_search
 {
-	height: 100px;
+	height: 80px;
 }
 .header_search_content
 {
@@ -754,7 +769,7 @@ select option
 }
 .wishlist_cart
 {
-	height: 100px;
+	height: 80px;
 }
 .wishlist
 {
@@ -3703,7 +3718,9 @@ body{
   margin: 0 auto;
   overflow-x: hidden;
 }
-.page{
+.page1{
+  margin-top: 30vh;
+  z-index: 1;
   min-height: 80vh;
   position: relative;
 }

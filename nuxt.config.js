@@ -51,6 +51,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+     // '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,7 +62,13 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // 'nuxt-element-ui',
   ],
+  // elementUI: {
+  //   components: ['Button', 'Carousel'],
+  //   locale: 'ru-RU',
+  // },
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
    axios: {

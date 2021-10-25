@@ -23,7 +23,7 @@
             </template>
           <b-card title="Активные">
             <div>
-              <b-badge style="padding: 2px; font-size: 12px; margin: 5px;" v-for="i in selected_filters">{{i.value}} <b-button size="sm" style="font-size: 10px;">X</b-button></b-badge>
+              <b-badge style="padding: 2px; font-size: 12px; margin: 5px;" :key="k" v-for="(i,k) in selected_filters">{{i.value}} {{i.unit!=='-'?i.unit:''}} <b-button size="sm" @click="removeByValue(i)" style="font-size: 10px;">X</b-button></b-badge>
             </div>
           </b-card>
             <b-card title="Фильтр" style="background-color: white">
@@ -39,7 +39,7 @@
               stacked
               name="flavour-1"
             >
-              <b-form-checkbox size="lg" ref="checkb" @change="setFilter(val.id)" :value="val.id" v-for="(val,nn) in f.values" :key="nn">{{val.value}} {{val.unit!=='-'?val.unit:''}}</b-form-checkbox>
+              <b-form-checkbox  size="lg" ref="checkb" @change="setFilter()" :value="val.id" v-for="(val,nn) in f.values" :key="nn">{{val.value}} {{val.unit!=='-'?val.unit:''}}</b-form-checkbox>
             </b-form-checkbox-group>
           </b-card-text>
         </b-card-body>
@@ -71,13 +71,28 @@ export default {
     }
   },
   async fetch(){
-    this.selected = JSON.parse(JSON.stringify(this.$route.query.filter?this.$route.query.filter:[]))
+    this.getSelected()
     this.getFilters()
   },
+  watch:{
+    '$route.query'(nv){
+      this.getSelected()
+    this.setToQuick()
+  },
+  },
   mounted() {
-
+    this.getFilters()
   },
   methods:{
+    getSelected(){
+      var selected = JSON.parse(JSON.stringify(this.$route.query.filter?this.$route.query.filter:[]))
+    if(Array.isArray(selected)){
+      selected = selected.map(x=>(x-0))
+    }else{
+      selected = [selected-0]
+    }
+    this.selected = selected
+    },
       /**
        * ткрытие фильтров
        * @param n
@@ -93,6 +108,7 @@ export default {
         this.show = true;
       let data = await this.$axios.get(`/cat/characterisitcs?category=${this.$route.params.id}`)
         this.filters = data.data;
+      this.all_filters = []
       for(let i of this.filters){
         for(let j of i.values){
           this.all_filters.push(j)
@@ -107,19 +123,32 @@ export default {
       setToQuick(){
         this.selected_filters = [];
         if(Array.isArray(this.selected)){
-          this.selected_filters = this.all_filters.filter(x=>this.selected.includes(""+x.id))
+          let adas = this.selected.map(x=>(x-0))
+          let newarr = JSON.parse(JSON.stringify(this.all_filters.filter(x=>adas.includes(x.id))))
+          this.selected_filters = [...new Set(newarr)]
         }else {
-          this.selected_filters = this.all_filters.filter(x=>this.selected===""+x.id)
+          let adas = this.selected-0
+          this.selected_filters = this.all_filters.filter(x=>adas===x.id)
         }
       },
       /**
        * добавление фильтров в путь
-       * @param val
        */
-      setFilter(val){
-        this.setToQuick()
+      setFilter(){
         this.$router.push({ path: this.$route.path, query: { filter: JSON.parse(JSON.stringify(this.selected)), page: 1 }})
-      }
+      },
+    /**
+     * удаляем выбранные по крестику
+     * @param k
+     */
+    removeByValue(k){
+      var arr = this.selected.map(x=>(x-0))
+        var index = arr.indexOf(k.id);
+        if (index !== -1) {
+          this.selected.splice(index, 1);
+          this.setFilter()
+        }
+    }
   }
 }
 </script>

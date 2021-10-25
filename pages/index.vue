@@ -6,14 +6,13 @@
 
   <b-row class="carusel-row">
       <b-col offset="0" offset-lg="3">
+
         <b-carousel
       id="carousel-1"
       v-model="slide"
       :interval="4000"
       controls
       indicators
-      img-height="400"
-      img-width="500"
 
       background="#ababab"
 
@@ -21,21 +20,21 @@
 
     >
       <!-- Text slides with image -->
-<!--      <b-carousel-slide-->
-<!--        caption="First slide"-->
-<!--        text="Nulla vitae elit libero, a pharetra augue mollis interdum."-->
-<!--        img-src="/img/tania_rekalama.jpg"-->
-<!--      ></b-carousel-slide>-->
+      <b-carousel-slide
+        caption="First slide"
+        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        img-src="/img/27-57-091.jpg"
+      ></b-carousel-slide>
           <b-carousel-slide
         caption="Second slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/images/banner_1.jpg"
+        img-src="/img/36-625.png"
       ></b-carousel-slide>
           <b-carousel-slide
 
         caption="Second slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/images/blog_single_background.jpg"
+        img-src="/img/48-32-871.jpg"
       ></b-carousel-slide>
     </b-carousel>
 
@@ -163,7 +162,5 @@ export default {
 .carusel-row img {
   /*height: 300px;*/
 }
- .carousel-item img {
-        height:40vh!important ;
-    }
+
 </style>

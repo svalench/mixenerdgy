@@ -19,20 +19,22 @@
           </div>
         </div>
         <div v-else>
-             <div class="col" v-for="(i,k) in categories" :key="k">
-                <div style="display: block;"><h2>{{i.name}}</h2><hr></div>
+             <div class="col name_group" v-for="(i,k) in categories" :key="k">
+                <div style="display: block;"><h2 style="font-size: 24px;">{{i.name}}</h2><hr></div>
                <div class="row">
-                 <div class="col-3" v-for="(j,c) in i.child" :key="c">
+                 <div style="margin-top: 20px;" class="col-4" v-for="(j,c) in i.child" :key="c">
             <b-card class=" card-style-subcat" @click="gotocat(j.id)"
-              :img-src="`${j.img}`"
-              :title="j.name"
               :img-alt="j.name"
             >
-              <b-card-body>
-              </b-card-body>
-              <template #footer>
-        <b-button  type="primary" style="background-color: #0d82d3">подробнее</b-button>
-      </template>
+              <b-row align-v="center">
+                <b-col cols="5">
+                   <b-card-img :src="j.img" style="width: 50%" fluid></b-card-img>
+                </b-col>
+                <b-col cols="7" style="white-space: pre-line;">
+                  <b-card-title style="font-size: 16px;padding-top: 10px;">{{j.name}}</b-card-title>
+                </b-col>
+              </b-row>
+
             </b-card>
           </div>
                </div>
@@ -179,5 +181,13 @@ export default {
 }
 h4{
   text-align: center;
+}
+.name_group{
+margin-top: 50px;
+  padding: 10px;
+  transition: .4s;
+}
+.name_group:hover{
+  color: #0d82d3;
 }
 </style>

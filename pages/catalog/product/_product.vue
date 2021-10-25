@@ -1,16 +1,16 @@
 <template>
 <div>
   <b-container>
-  <b-row><h1>{{product.name}}</h1></b-row>
+  <b-row><h1 style="font-size: 32px;">{{product.name}}</h1></b-row>
 
   <b-row>
     <b-col cols="7">
       <b-row>
-        <b-col cols="6"><b-img class="ima_preview" fluid style="margin-top: 15%;" :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-img></b-col>
-        <b-col cols="6">
-          <b-row>
+        <b-col cols="7"><b-img class="ima_preview" fluid style="margin-top: 10%;" :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-img></b-col>
+        <b-col cols="4" class="blockfoto" style="height: 400px; margin-top: 5%; overflow: auto; ">
+          <b-row >
 
-           <b-col cols="5" offset="1" class="images_card" v-for="(i,k) in product.images" :key="k" style="display: block; margin-top: 15%;">
+           <b-col cols="11" offset="1" class="images_card" v-for="(i,k) in product.images" :key="k" style="display: block; margin-top: 25%;">
             <b-img  @click="index = k" fluid :src="`${i.img}`"></b-img>
              </b-col>
 
@@ -20,7 +20,7 @@
     </b-col>
     <b-col style="text-align: right;">
       <b-row>
-        <div style="width: 100%; font-weight: 600;"> <h5 style="font-size: 28px;">Артикул: {{product.article}}</h5></div>
+        <div style="width: 100%;  font-weight: 600;"> <h5 style="font-size: 22px;">Артикул: {{product.article}}</h5></div>
       </b-row>
       <div class="row" style="margin-top: 5%;">
         <div class="col-4 offset-3">
@@ -103,5 +103,9 @@ export default {
 .images_card:hover{
   box-shadow: 10px 12px 14px #0e8ce4;
   color: #0d82d3;
+}
+
+.blockfoto::-webkit-scrollbar {
+  display: none;
 }
 </style>

@@ -36,6 +36,7 @@
 								<ul class="standard_dropdown main_nav_dropdown">
 									<li><nuxt-link to="/">Главная<i class="fas fa-chevron-down"></i></nuxt-link></li>
                   <li><nuxt-link to="/catalog">Каталог<i class="fas fa-chevron-down"></i></nuxt-link></li>
+                  <li><nuxt-link to="/about">О нас<i class="fas fa-chevron-down"></i></nuxt-link></li>
 <!--									<li class="hassubs">-->
 <!--										<a href="#">Дилерам в РБ<i class="fas fa-chevron-down"></i></a>-->
 <!--										<ul>-->
@@ -45,7 +46,6 @@
 <!--										</ul>-->
 <!--									</li>-->
 									<li><nuxt-link to="/certificates">Сертификаты<i class="fas fa-chevron-down"></i></nuxt-link></li>
-									<li><nuxt-link to="/about">О нас<i class="fas fa-chevron-down"></i></nuxt-link></li>
                   <li><nuxt-link to="/contact">Контакты<i class="fas fa-chevron-down"></i></nuxt-link></li>
 								</ul>
 							</div>
@@ -100,6 +100,11 @@ export default {
     async getCategories(){
         let data = await this.$axios.get('/catalog/categories/');
         this.menu = data.data.results;
+        this.menu.sort(function(a, b){
+            if(a.name < b.name) { return -1; }
+            if(a.name > b.name) { return 1; }
+            return 0;
+        })
         this.$forceUpdate()
     },
   }
