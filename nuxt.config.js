@@ -29,6 +29,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'element-ui/lib/theme-chalk/index.css',
     '@/assets/styles/bootstrap4/bootstrap.min.css',
     '@/assets/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css',
     '@/assets/styles/main_styles.css',
@@ -42,6 +43,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/element-ui',
     '@/plugins/axios',
     {src: '@/plugins/owl.js', ssr: false},
   ],
@@ -62,7 +64,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // 'nuxt-element-ui',
+    'nuxt-element-ui',
   ],
   // elementUI: {
   //   components: ['Button', 'Carousel'],

@@ -3,40 +3,13 @@
   	<!-- Banner -->
 
 	<div class="banner container" style="">
-
   <b-row class="carusel-row">
       <b-col offset="0" offset-lg="3">
-
-        <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-
-      background="#ababab"
-
-      style="text-shadow: 1px 1px 2px #333;"
-
-    >
-      <!-- Text slides with image -->
-      <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/img/27-57-091.jpg"
-      ></b-carousel-slide>
-          <b-carousel-slide
-        caption="Second slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/img/36-625.png"
-      ></b-carousel-slide>
-          <b-carousel-slide
-
-        caption="Second slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="/img/48-32-871.jpg"
-      ></b-carousel-slide>
-    </b-carousel>
+         <el-carousel :interval="4000">
+          <el-carousel-item v-for="item in sliderImages" :key="item">
+            <el-image  style="width: 100%; height: 100%" :src="item" :fit="'scale-down'"></el-image>
+          </el-carousel-item>
+        </el-carousel>
 
       </b-col>
   </b-row>
@@ -151,6 +124,11 @@ export default {
     return{
       categories:[],
       slide:null,
+      sliderImages:[
+        "/img/36-625.png",
+        "/img/27-57-091.jpg",
+        "/img/48-32-871.jpg"
+      ]
     }
   },
 }

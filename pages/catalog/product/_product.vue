@@ -6,16 +6,9 @@
   <b-row>
     <b-col cols="7">
       <b-row>
-        <b-col cols="7"><b-img class="ima_preview" fluid style="margin-top: 10%;" :src="`https://api.mixenerdgy.by/media/${product.img}`"></b-img></b-col>
-        <b-col cols="4" class="blockfoto" style="height: 400px; margin-top: 5%; overflow: auto; ">
-          <b-row >
+         <p v-if="$fetchState.pending">Loading....</p>
+          <galery-product v-else :productItems="product"></galery-product>
 
-           <b-col cols="11" offset="1" class="images_card" v-for="(i,k) in product.images" :key="k" style="display: block; margin-top: 25%;">
-            <b-img  @click="index = k" fluid :src="`${i.img}`"></b-img>
-             </b-col>
-
-            </b-row>
-        </b-col>
       </b-row>
     </b-col>
     <b-col style="text-align: right;">
@@ -50,15 +43,17 @@
     <b-row>
       <tabs_product :data="fortabs" style="width: 100%; margin-top: 10%; margin-bottom: 5%;"></tabs_product>
     </b-row>
+
     </b-container>
 </div>
 </template>
 
 <script>
 import Tabs_product from "../../../components/catalog/tabs_product";
+import GaleryProduct from "../../../components/catalog/GaleryProduct";
 export default {
   name: "_product",
-  components: {Tabs_product},
+  components: {GaleryProduct, Tabs_product},
   data(){
     return{
       count:0,
@@ -70,7 +65,10 @@ export default {
   async fetch(){
     await this.getProduct();
   },
-   watch:{
+  async mounted() {
+
+  },
+  watch:{
     count(nv){
       if(nv<0){
         this.count=0;
@@ -81,7 +79,7 @@ export default {
     async getProduct(){
       let data = await this.$axios.get(`/product/product/${this.$route.params.product}/`);
       this.product = data.data;
-      console.log(this.product);
+      this.fortabs = [];
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
       this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
     }

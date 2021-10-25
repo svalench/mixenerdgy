@@ -24,10 +24,8 @@
           </b-input-group>
         </div>
         <div class="col-6" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
-           <b-button variant="outline-primary" size="sm" >
-            <div class="row" style="white-space: pre-line; text-align: center; font-size: 14px; font-weight: 500;">
-              <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">В корзину</div>
-            </div>
+           <b-button  variant="outline-primary" size="sm" >
+             В корзину
           </b-button>
         </div>
       </div>
@@ -44,7 +42,7 @@
   <template #footer><nuxt-link :to="`/catalog/product/${product.id}/`">
     <div class="row">
       <div class="col-6 offset-3">
-        <b-button size="sm" style="background-color: #0d82d3; font-size: 16px;" type="primary">подробнее</b-button>
+        <b-button size="sm"   type="primary">подробнее</b-button>
       </div>
 
     </div>
@@ -54,7 +52,11 @@
 </template>
 
 <script>
+
 export default {
+  components: {
+
+    },
   data(){
     return{
       count:0,
