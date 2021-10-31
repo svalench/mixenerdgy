@@ -91,6 +91,7 @@ export default {
         let cart = {count:this.count, product:this.product, id:this.product.id}
         this.ADD_TO_CART(cart);
         this.in_cart = true;
+        this.count = 0;
          this.$message({message:'Добавлено', type: 'success'});
     },
     checkInCart(){

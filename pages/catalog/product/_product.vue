@@ -28,11 +28,12 @@
           </b-input-group>
         </div>
         <div class="col-5" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
-           <b-button variant="outline-primary" size="sm" >
+           <b-button @click="addToCart" variant="outline-primary" size="sm" >
             <div class="row" style="white-space: pre-line; text-align: center; font-size: 14px; font-weight: 500;">
               <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">Добавить в  корзину</div>
             </div>
           </b-button>
+          {{in_cart?'В корзине':''}}
         </div>
       </div>
       <b-row style="padding: 5%; margin-top: 10%; text-align: left;">
@@ -51,12 +52,14 @@
 <script>
 import Tabs_product from "../../../components/catalog/tabs_product";
 import GaleryProduct from "../../../components/catalog/GaleryProduct";
+import { mapGetters,mapActions } from 'vuex';
 export default {
   name: "_product",
   components: {GaleryProduct, Tabs_product},
   data(){
     return{
-      count:0,
+       count:0,
+      in_cart:false,
       product:[],
       fortabs:[],
       index: null,
@@ -66,22 +69,55 @@ export default {
     await this.getProduct();
   },
   async mounted() {
-
+      this.checkInCart();
+  },
+  computed:{
+     ...mapGetters({
+        cart:'cart/cart',
+      }),
   },
   watch:{
     count(nv){
       if(nv<0){
         this.count=0;
       }
+    },
+     cart(nv){
+      this.checkInCart();
     }
   },
   methods:{
+    ...mapActions({
+           ADD_TO_CART: 'cart/ADD_TO_CART'
+        }),
     async getProduct(){
       let data = await this.$axios.get(`/product/product/${this.$route.params.product}/`);
       this.product = data.data;
       this.fortabs = [];
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
       this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
+    },
+     addToCart(){
+        let cart = {count:this.count, product:this.product, id:this.product.id}
+        this.ADD_TO_CART(cart);
+        this.count = 0;
+        this.in_cart = true;
+         this.$message({message:'Добавлено', type: 'success'});
+    },
+    checkInCart(){
+       let self = this;
+      let ccc = this.cart.find(
+          function (x){
+            if(x.id===self.product.id){
+              return x
+            }
+          }
+        );
+      if(ccc!==undefined){
+        this.in_cart = true;
+      }else{
+        this.in_cart = false;
+      }
     }
   }
 }
