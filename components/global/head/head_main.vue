@@ -23,9 +23,24 @@
                       v-model="visible"
                        trigger="manual"
                       >
-                      <el-input type="search" v-model="search" slot="reference" class="header_search_input" style="height: 50px;" placeholder="Введите название или артикул..."></el-input>
+                      <el-input type="search" @blur="visible=false" @focus="showSearch" v-model="search" slot="reference" class="header_search_input" style="height: 50px;" placeholder="Введите название или артикул..."></el-input>
                     <div style="overflow: auto; height: 50vh;">
-                      <el-card v-for="(p,k) in products" :key="k">
+                       <b-skeleton-wrapper :loading="show">
+                        <template #loading>
+                          <b-card v-for="i in 2">
+                            <b-card-title>
+                            <b-skeleton width="25%" height="70%" style="margin-right: 5%;"></b-skeleton>
+                            </b-card-title>
+                             <b-card-text>
+                               <b-skeleton width="35%" height="10%" style="margin-right: 5%;"></b-skeleton>
+                               <b-skeleton width="55%" height="15%" style="margin-right: 5%;"></b-skeleton>
+                               <b-skeleton width="25%" height="15%" style="margin-right: 5%;"></b-skeleton>
+                            </b-card-text>
+                          </b-card>
+                        </template>
+                         <div  v-for="(p,k) in products" :key="k">
+                         <nuxt-link :to="`/catalog/product/${p.id}/`">
+                      <el-card>
                         <b-row>
                           <b-col cols="2">
                             <el-image  :src="`https://api.mixenerdgy.by/media/${p.img}`"></el-image>
@@ -36,6 +51,9 @@
                           </b-col>
                         </b-row>
                       </el-card>
+                      </nuxt-link>
+                           </div>
+                       </b-skeleton-wrapper>
                     </div>
                     </el-popover>
 										<button @click="startSearch"  class="header_search_button trans_300" value="Submit"><img src="/images/search.png" alt=""></button>
@@ -74,7 +92,26 @@ export default {
       count:0,
     }
   },
+  watch:{
+    search(nv){
+      if(nv.length>3){
+        this.startSearch();
+      }else{
+        this.visible =false;
+      }
+    },
+    '$route.query'(nv){
+      this.visible =false;
+    },
+  },
   methods:{
+    showSearch(){
+       if(this.search.length>3){
+        this.visible =true;
+      }else{
+        this.visible =false;
+      }
+    },
     startSearch(){
       this.visible =true;
       this.searchProducts();
