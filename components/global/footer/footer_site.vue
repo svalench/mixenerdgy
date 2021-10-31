@@ -11,7 +11,7 @@
 						<div class="footer_title">Остались вопросы? Позвоните нам!</div>
             <div class="footer_phone"><a href="tel:+375173926366">+375173926366</a></div>
 						<div class="footer_contact_text">
-							<p>Машиносотрителей 16 офис 32</p>
+							<p>Машиностроителей 16 офис 32</p>
 							<p>г. Минск, Республика Беларусь</p>
 						</div>
 						<div class="footer_social">
@@ -34,15 +34,13 @@
 
 				<div class="col-lg-2">
 					<div class="footer_column">
-						<div class="footer_title">Customer Care</div>
+						<div class="footer_title">Навигация</div>
 						<ul class="footer_list">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">Order Tracking</a></li>
-							<li><a href="#">Wish List</a></li>
-							<li><a href="#">Customer Services</a></li>
-							<li><a href="#">Returns / Exchange</a></li>
-							<li><a href="#">FAQs</a></li>
-							<li><a href="#">Product Support</a></li>
+							<li><a href="/">Главная</a></li>
+							<li><a href="/catalog">Каталог</a></li>
+							<li><a href="/about">О нас</a></li>
+							<li><a href="/certificates">Сертификаты</a></li>
+							<li><a href="/contact">Котнакты</a></li>
 						</ul>
 					</div>
 				</div>

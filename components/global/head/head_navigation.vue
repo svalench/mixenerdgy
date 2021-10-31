@@ -95,8 +95,19 @@ export default {
         var menu = this.$refs.menu;
         menu.classList.remove('hidemenu')
       }
+       window.addEventListener("scroll", this.onScroll)
   },
   methods:{
+    onScroll(e) {
+      if(this.$route.path==='/') {
+        var menu = this.$refs.menu;
+        if (window.top.scrollY > 270) {
+          menu.classList.add('hidemenu')
+        } else {
+          menu.classList.remove('hidemenu')
+        }
+      }
+    },
     async getCategories(){
         let data = await this.$axios.get('/catalog/categories/');
         this.menu = data.data.results;
@@ -107,7 +118,10 @@ export default {
         })
         this.$forceUpdate()
     },
-  }
+  },
+  beforeDestroy() {
+  window.removeEventListener("scroll", this.onScroll)
+},
 }
 </script>
 
