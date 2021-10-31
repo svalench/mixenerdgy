@@ -40,7 +40,7 @@
 							<li><a href="/catalog">Каталог</a></li>
 							<li><a href="/about">О нас</a></li>
 							<li><a href="/certificates">Сертификаты</a></li>
-							<li><a href="/contact">Котнакты</a></li>
+							<li><a href="/contact">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
