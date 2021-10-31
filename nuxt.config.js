@@ -46,6 +46,7 @@ export default {
     '@/plugins/element-ui',
     '@/plugins/axios',
     {src: '@/plugins/owl.js', ssr: false},
+    '@/plugins/vue-ls',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -65,6 +66,9 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-element-ui',
+    ['nuxt-vuex-localstorage', {
+      localStorage: ['cart'] //  If not entered, “localStorage” is the default value
+    }]
   ],
   // elementUI: {
   //   components: ['Button', 'Carousel'],

@@ -11,7 +11,6 @@
     margin-top: 10px;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
-    z-index: 10000;
     background: red;
 }
 .owl-theme .owl-nav [class*='owl-']

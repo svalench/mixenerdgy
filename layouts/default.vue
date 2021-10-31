@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header_site style="position: fixed;left: 0;top: 0; width: 100%; z-index: 900"></header_site>
+    <header_site style="position: fixed;left: 0;top: 0; width: 100%; z-index: 200"></header_site>
       <div class="page1" >
         <Nuxt  keep-alive :keep-alive-props="{ max: 10 }" />
       </div>

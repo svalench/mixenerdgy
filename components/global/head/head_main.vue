@@ -50,16 +50,8 @@
 						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
 							<!-- Cart -->
 							<div class="cart">
-								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
-									<div class="cart_icon" style="width: 51px;">
-										<img src="/img/cart.png" alt="">
-										<div class="cart_count"><span>0</span></div>
-									</div>
-									<div class="cart_content">
-										<div class="cart_text"><a href="#">Корзина</a></div>
-										<div class="cart_price">0.00 руб</div>
-									</div>
-								</div>
+                <cart-component-header></cart-component-header>
+
 							</div>
 						</div>
 					</div>
@@ -69,8 +61,10 @@
 </template>
 
 <script>
+import CartComponentHeader from "./CartComponentHeader";
 export default {
   name: "head_main",
+  components: {CartComponentHeader},
   data(){
     return{
       visible:false,
