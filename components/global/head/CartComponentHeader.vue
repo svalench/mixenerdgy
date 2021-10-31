@@ -17,6 +17,11 @@
        <div style="height: 40vh; overflow: auto;">
          <div v-if="cart.length">
           <b-card v-for="(c,k) in cart" :key="k" >
+            <b-row>
+              <b-col>
+              <button @click="DELETE_POSITION(c.id)" type="button" aria-label="Close" class="close">×</button>
+            </b-col>
+            </b-row>
         <b-row>
           <b-col cols="2">
             <b-card-img :src="`https://api.mixenerdgy.by/media/${c.product.img}`"></b-card-img>
@@ -25,13 +30,25 @@
             <b-row>
               <b-col><b-card-title>{{c.product.name}}</b-card-title></b-col>
             </b-row>
-            <b-row>
-               <b-col><b-card-sub-title>{{c.product.article}}</b-card-sub-title></b-col>
-            </b-row>
           </b-col>
         </b-row>
-        <div class="w-100">
-             <div class="float_right"><b-card-sub-title>количество - {{c.count}}</b-card-sub-title></div>
+        <div class="w-100 align-content-center ">
+          <b-row align-v="center">
+            <b-col>
+              <b-input-group>
+            <b-input-group-prepend>
+              <b-btn @click="COUNT_DOWN(c.id)" variant="outline-primary" size="sm" >-</b-btn>
+            </b-input-group-prepend>
+            <b-form-input type="number" :ref="`countProduct_${c.id}`" size="sm"  @input="SET_COUNT({product_id:c.id,value:$event})" style="color: #333333; text-align: center;" min="0" :value="c.count"></b-form-input>
+            <b-input-group-append>
+              <b-btn @click="COUNT_UP(c.id)" variant="outline-primary" size="sm" >+</b-btn>
+            </b-input-group-append>
+          </b-input-group>
+            </b-col>
+           <b-col><b-card-sub-title>{{c.product.article}}</b-card-sub-title></b-col>
+
+<!--             <div class="float_right"><b-card-sub-title>количество - {{c.count}}</b-card-sub-title></div>-->
+            </b-row>
         </div>
       </b-card>
          </div>
@@ -88,7 +105,7 @@
 </template>
 
 <script>
-import {mapActions, mapGetters} from "vuex";
+import {mapActions, mapGetters, mapMutations} from "vuex";
 
 export default {
   name: "CartComponentHeader",
@@ -119,6 +136,12 @@ export default {
     ...mapActions({
            CLEAR_CART: 'cart/CLEAR_CART'
         }),
+     ...mapMutations({
+      COUNT_DOWN: 'cart/COUNT_DOWN',
+      COUNT_UP: 'cart/COUNT_UP',
+      SET_COUNT: 'cart/SET_COUNT',
+      DELETE_POSITION: 'cart/DELETE_POSITION',
+    }),
     async sendCart(){
       console.log(this.cart);
       if(this.validateEmail()){
