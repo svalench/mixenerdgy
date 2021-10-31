@@ -14,15 +14,15 @@
 							<p>Машиностроителей 16 офис 32</p>
 							<p>г. Минск, Республика Беларусь</p>
 						</div>
-						<div class="footer_social">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fab fa-google"></i></a></li>
-								<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-							</ul>
-						</div>
+<!--						<div class="footer_social">-->
+<!--							<ul>-->
+<!--								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>-->
+<!--								<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+<!--								<li><a href="#"><i class="fab fa-youtube"></i></a></li>-->
+<!--								<li><a href="#"><i class="fab fa-google"></i></a></li>-->
+<!--								<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>-->
+<!--							</ul>-->
+<!--						</div>-->
 					</div>
 				</div>
 
