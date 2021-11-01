@@ -16,7 +16,7 @@
     <div class="col  global-childcat" ref="cats"  @mouseout="hideSelected()" @mouseover="saveSelected()">
       <div class="row">
         <div v-if="tempSecondCat.length">
-          <div class="col-4" v-for="(i,k) in tempSecondCat" :key="k">
+          <div class="col-4-sm col-12" v-for="(i,k) in tempSecondCat" :key="k">
             <b-card class=" card-style-subcat"  style="text-align: center;" @click="gotocat(i.id)">
               <b-card-header>{{i.name}}</b-card-header>
               <b-card-body>
@@ -28,7 +28,7 @@
              <div class="col name_group" v-for="(i,k) in categories" :key="k">
                 <div style="display: block;"><h2 style="font-size: 24px;">{{i.name}}</h2><hr></div>
                <div class="row">
-                 <div style="margin-top: 20px;" class="col-4" v-for="(j,c) in i.child" :key="c">
+                 <div style="margin-top: 20px;" class="col-lg-4 col-12" v-for="(j,c) in i.child" :key="c">
             <b-card class=" card-style-subcat" @click="gotocat(j.id)"
               :img-alt="j.name"
             >

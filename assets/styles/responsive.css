@@ -133,8 +133,14 @@
 @media only screen and (max-width: 991px)
 {
   .page1{
-   margin-top: 35vh;
+   margin-top: 10vh;
  }
+  .brand_item_img{
+    width: 100%;
+  }
+  .brand_item{
+    margin-top: 40%;
+  }
 	.top_bar
 	{
 		/*display: none;*/
@@ -149,7 +155,7 @@
 	}
 	.main_nav
 	{
-		margin-top: 56px;
+		/*margin-top: 56px;*/
 	}
 	.main_nav_menu
 	{
