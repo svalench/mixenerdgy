@@ -39,7 +39,9 @@
               stacked
               name="flavour-1"
             >
-              <b-form-checkbox  size="lg" ref="checkb" @change="setFilter()" :value="val.id" v-for="(val,nn) in f.values" :key="nn">{{val.value}} {{val.unit!=='-'?val.unit:''}}</b-form-checkbox>
+              <b-row v-for="(val,nn) in f.values" :key="nn">
+              <b-form-checkbox  size="lg" ref="checkb" @change="setFilter()" :value="val.id" >{{val.value}} {{val.unit!=='-'?val.unit:''}}</b-form-checkbox>
+              </b-row>
             </b-form-checkbox-group>
           </b-card-text>
         </b-card-body>
