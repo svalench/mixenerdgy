@@ -95,6 +95,7 @@ export default {
         var menu = this.$refs.menu;
         menu.classList.remove('hidemenu')
       }
+      this.onScroll();
        window.addEventListener("scroll", this.onScroll)
   },
   methods:{

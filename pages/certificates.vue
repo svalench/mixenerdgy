@@ -1,6 +1,12 @@
 <template>
 <div class="container" >
-  <div class="row">
+  <div class="row" style="padding-top:50px; ">
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+  <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
+  <el-breadcrumb-item>Сертификаты</el-breadcrumb-item>
+</el-breadcrumb>
+  </div>
+  <div class="row" style="padding-top:30px; ">
     <div class="col-3">
       <cert-filter></cert-filter>
     </div>

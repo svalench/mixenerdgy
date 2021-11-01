@@ -11,7 +11,7 @@
 						<div class="footer_title">Остались вопросы? Позвоните нам!</div>
             <div class="footer_phone"><a href="tel:+375173926366">+375173926366</a></div>
 						<div class="footer_contact_text">
-							<p>Машиностроителей 16 офис 32</p>
+							<p>ул. Артиллеристов, дом № 8, корпус 3, офис 17</p>
 							<p>г. Минск, Республика Беларусь</p>
 						</div>
 <!--						<div class="footer_social">-->
@@ -27,7 +27,8 @@
 				</div>
 
 				<div class="col-lg-5">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad0f82ac64f3dd42a610f1377d049a782b659e73cfd5f932d24d949e17ddd0b0b&amp;source=constructor" width="350" height="200" frameborder="0"></iframe>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e610803a4d59a683c1b1b4076f418568a1606d3ce37923db82f75ec01727438&amp;source=constructor"
+                  width="350" height="200" frameborder="0"></iframe>
 
 				</div>
 

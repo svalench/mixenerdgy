@@ -1,7 +1,15 @@
 <template>
 <div>
   <b-container>
-  <b-row><h1 style="font-size: 32px;">{{product.name}}</h1></b-row>
+      <div class="row" style="padding-top:50px; ">
+          <el-breadcrumb separator-class="el-icon-arrow-right">
+            <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/catalog' }">Каталог</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: `/catalog/${cats.id}` }">{{cats.name}}</el-breadcrumb-item>
+            <el-breadcrumb-item >{{product.name}}</el-breadcrumb-item>
+          </el-breadcrumb>
+      </div>
+  <b-row style="padding-top:30px; "><h1 style="font-size: 32px;">{{product.name}}</h1></b-row>
 
   <b-row>
     <b-col cols="7">
@@ -62,6 +70,7 @@ export default {
       in_cart:false,
       product:[],
       fortabs:[],
+      cats:{},
       index: null,
     }
   },
@@ -69,7 +78,7 @@ export default {
     await this.getProduct();
   },
   async mounted() {
-      this.checkInCart();
+    this.checkInCart();
   },
   computed:{
      ...mapGetters({
@@ -96,6 +105,8 @@ export default {
       this.fortabs = [];
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
       this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
+      let cats = await this.$axios.get(`/catalog/categories/second/${this.product.card.category}/`);
+    this.cats = cats.data;
     },
      addToCart(){
         let cart = {count:this.count, product:this.product, id:this.product.id}

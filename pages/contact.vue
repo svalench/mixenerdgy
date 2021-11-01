@@ -1,6 +1,12 @@
 <template>
 <div class="container" >
-  <div class="row">
+  <div class="row" style="padding-top:50px; ">
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+  <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
+  <el-breadcrumb-item>Контакты</el-breadcrumb-item>
+</el-breadcrumb>
+  </div>
+  <div class="row" style="padding-top:30px;">
     <div class=" col-lg-6 col-xs-12" style=" overflow: auto;">
       <div class="row">
         <div style="display: flex;">

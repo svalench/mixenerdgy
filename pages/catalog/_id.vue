@@ -1,6 +1,13 @@
 <template>
 <div class="container" >
-  <div class="row">
+  <div class="row" style="padding-top:50px; ">
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+  <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
+  <el-breadcrumb-item :to="{ path: '/catalog' }">Каталог</el-breadcrumb-item>
+  <el-breadcrumb-item >{{cats.name}}</el-breadcrumb-item>
+</el-breadcrumb>
+  </div>
+  <div class="row" style="padding-top:30px; ">
     <div class="col-1 d-xs-block d-sm-none" > > </div>
     <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none filterblock"  style="max-height: 100vh; overflow: auto;">
     <my_filter></my_filter>
@@ -44,7 +51,12 @@ export default {
       cat:null,
       count:0,
       products:[],
+      cats:{},
     }
+  },
+  async mounted() {
+    let data = await this.$axios.get(`/catalog/categories/second/${this.$route.params.id}/`);
+    this.cats = data.data;
   },
   async fetch(){
     this.cat = this.$route.params.id;
@@ -81,6 +93,7 @@ export default {
 
       }
       let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`);
+      console.log(data)
       this.count = data.data.count
       this.products = data.data.results
       this.show = false;

@@ -1,5 +1,11 @@
 <template>
 <div class="container" >
+  <div class="row" style="padding-top:50px; ">
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+  <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
+  <el-breadcrumb-item>Каталог</el-breadcrumb-item>
+</el-breadcrumb>
+  </div>
   <div class="row" >
     <div class="col-1 d-xs-block d-sm-none" > > </div>
 <!--    <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none" ref="menu"  style="padding-bottom: 20px; overflow: auto;">-->

@@ -28,7 +28,8 @@
     "vue-ls": "^4.0.0",
     "vue-picture-swipe": "^2.1.0",
     "vue-pswipe": "^0.15.3",
-    "vue-simple-photoswipe": "^1.0.3"
+    "vue-simple-photoswipe": "^1.0.3",
+    "vue-slick": "^1.1.16"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.1"
