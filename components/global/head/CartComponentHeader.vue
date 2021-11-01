@@ -1,6 +1,6 @@
 <template>
   <div >
-<div style="cursor:pointer;" @click="$bvModal.show('modal-xl')" class="cart_container d-flex flex-row align-items-center justify-content-end" >
+<div style="cursor:pointer;" @click.native="$bvModal.show('modal-xl')" class="cart_container d-flex flex-row align-items-center justify-content-end" >
   <div class="cart_icon" style="width: 51px;">
     <img  src="/img/cart.png" alt="">
     <div class="cart_count"><span>{{lenCart}}</span></div>

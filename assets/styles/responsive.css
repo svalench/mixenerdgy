@@ -122,7 +122,7 @@
 @media only screen and (max-width: 1024px)
 {
 .page1{
-   margin-top: 40vh;
+   margin-top: 35vh;
  }
 }
 
@@ -132,9 +132,6 @@
 
 @media only screen and (max-width: 991px)
 {
-  .page1{
-   margin-top: 10vh;
- }
   .brand_item_img{
     width: 100%;
   }
@@ -392,6 +389,7 @@
 
 @media only screen and (max-width: 575px)
 {
+
 	h2{font-size: 24px;}
 	p{font-size: 13px;}
 	.top_bar
@@ -791,6 +789,9 @@
 	{
 		display: none;
 	}
+    .page1{
+   margin-top: 10vh;
+ }
 }
 
 /************
