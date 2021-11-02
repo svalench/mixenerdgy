@@ -24,7 +24,7 @@
               <b-card img-top style="height: 100%; width: 100%;">
 <!--                <b-card-img width="50%;" :src=""></b-card-img>-->
                 <b-row>
-                  <b-col cols="5">
+                  <b-col cols="4">
                     <el-image   :src="`https://api.mixenerdgy.by/media/${item.img}`" :fit="'contain'"></el-image>
                   </b-col>
                   <b-col><b-card-title style="font-size: 14px;">{{item.name}}</b-card-title></b-col>

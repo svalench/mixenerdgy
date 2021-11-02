@@ -93,7 +93,6 @@ export default {
 
       }
       let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${params}`);
-      console.log(data)
       this.count = data.data.count
       this.products = data.data.results
       this.show = false;

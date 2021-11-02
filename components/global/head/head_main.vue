@@ -38,6 +38,7 @@
                             </b-card-text>
                           </b-card>
                         </template>
+                         <div v-if="products.length">
                          <div  v-for="(p,k) in products" :key="k">
                          <nuxt-link :to="`/catalog/product/${p.id}/`">
                       <el-card>
@@ -53,10 +54,17 @@
                       </el-card>
                       </nuxt-link>
                            </div>
+                           <nuxt-link :to="`/search?search=${this.search}`">
+                           <div class="w-100 align-content-center"><span>
+                             Найдено совпадений - {{count}}. Перейти.
+                           </span></div>
+                             </nuxt-link>
+                         </div>
+                         <div  v-else>не найдено совпадений</div>
                        </b-skeleton-wrapper>
                     </div>
                     </el-popover>
-										<button @click="startSearch"  class="header_search_button trans_300" value="Submit"><img src="/images/search.png" alt=""></button>
+										<button @blur="visible=false" @click="goToSearch"  class="header_search_button trans_300" value="Submit"><img src="/images/search.png" alt=""></button>
 									</div>
 								</div>
 							</div>
@@ -105,6 +113,9 @@ export default {
     },
   },
   methods:{
+    goToSearch(){
+      this.$router.push(`/search?search=${this.search}`)
+    },
     showSearch(){
        if(this.search.length>3){
         this.visible =true;
@@ -118,9 +129,9 @@ export default {
     },
     async searchProducts(){
       this.show = true;
-      let data = await this.$axios.get(`/product/product/?limit=80&search=${this.search}`);
+      let data = await this.$axios.get(`/product/product/?limit=10&search=${this.search}`);
       this.count = data.data.count
-      this.products = data.data.results
+      this.products = data.data.results;
       this.show = false;
     },
     goToProduct(id){

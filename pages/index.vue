@@ -93,7 +93,7 @@
               @swipe="handleSwipe"
               @lazyLoaded="handleLazyLoaded"
               @lazyLoadError="handleLazeLoadError">
-          <div class="brand_item" v-for="i in 8" :key="i" ><el-image class="brand_item_img" :src="`/images/brands/img_${i}.png`" :fit="'scale-down'" alt=""></el-image></div>
+          <div class="brand_item" v-for="i in 7" :key="i" ><el-image class="brand_item_img" :src="`/images/brands/img_${i}.png`" :fit="'scale-down'" alt=""></el-image></div>
             </slick>
             <!-- Brands Slider Navigation -->
 						<div class="brands_nav brands_prev" @click="prev"><i class="fas fa-chevron-left"></i></div>
@@ -194,7 +194,7 @@ export default {
   /*height: 300px;*/
 }
 .brand_item_img{
-  width: 50%;
+  width: 60%;
 }
 .brand_item{
   margin-top: 26%;
