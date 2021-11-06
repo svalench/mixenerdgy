@@ -26,14 +26,24 @@
 					</div>
 				</div>
 
-				<div class="col-lg-5">
+				<div class="col-lg-4">
 					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e610803a4d59a683c1b1b4076f418568a1606d3ce37923db82f75ec01727438&amp;source=constructor"
-                  width="350" height="200" frameborder="0"></iframe>
+                  width="300" height="200" frameborder="0"></iframe>
 
 				</div>
 
 
-				<div class="col-lg-2">
+        <div class="col-lg-2">
+					<div class="footer_column">
+						<div class="footer_title">Дополнительная информация</div>
+						<ul class="footer_list">
+							<li><img width="100%" src="/img/akkreditovany-na-BUTB.jpg"></li>
+							<li><a href="http://juguni.by" target="_blank">juguni.by</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-1">
 					<div class="footer_column">
 						<div class="footer_title">Навигация</div>
 						<ul class="footer_list">
@@ -47,6 +57,63 @@
 				</div>
 
 			</div>
+      <hr>
+      <div class="d-none d-lg-block">
+      <div class="row " >
+        <div class="col-lg-9">
+        <div class="footer_title">Реквизиты</div>
+          <div class="row">
+             <div class=" col-lg-12 footer_contact_text">
+              <p>Юр.адрес/почтовый адрес: 220007,  г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17 </p>
+             </div>
+          </div>
+        <div class="row">
+           <div class=" col-lg-12 footer_contact_text">
+          <p>Счет: BY20ALFA30122474210010270000
+            в ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</p>
+           </div>
+        </div>
+
+          <div class="row">
+           <div class=" col-lg-12 footer_contact_text">
+          <p>Директор Михашонок Сергей Васильевич, на основании Устава
+              Приказ № 8-К от 19.02.2020г.
+          </p>
+           </div>
+        </div>
+
+          <div class="row">
+           <div class=" col-lg-12 footer_contact_text">
+          <p> <a href="/docs/Реквизиты_МиксЭнерджи.docx" target="_blank">Скачать реквизиты</a></p>
+           </div>
+        </div>
+        </div>
+
+        <div class="col">
+           <div class="footer_title" style="color: #1e2f4c;">--</div>
+           <div class="row">
+             <div class=" col-lg-12 footer_contact_text">
+               <p>УНП:193243351</p>
+             </div>
+          </div>
+
+          <div class="row">
+             <div class=" col-lg-12 footer_contact_text">
+               <p>БИК: ALFABY2X</p>
+             </div>
+          </div>
+
+          <div class="row">
+           <div class=" col-lg-12 footer_contact_text">
+          <p> <i class="fas fa-envelope"></i> mixenerdgy@mail.ru </p>
+            <p><i class="fa fa-phone"></i> тел/факс:+375173926366 </p>
+            <p><i class="fa fa-phone"></i> тел:+37529-377-47-10 </p>
+           </div>
+        </div>
+
+        </div>
+      </div>
+        </div>
 		</div>
 	</footer>
 </template>

@@ -1,6 +1,6 @@
 <template>
 <div class="container" >
-  <div class="row" style="padding-top:50px; ">
+  <div class="row" style="padding-top:30px; ">
     <el-breadcrumb separator-class="el-icon-arrow-right">
   <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
   <el-breadcrumb-item>Сертификаты</el-breadcrumb-item>
@@ -12,7 +12,7 @@
     </div>
     <div class="col">
   <div class="row" >
-    <div class="col-4" style=" margin:0; height: 100%;" v-for="(c,k) in certificates" :key="k">
+    <div class="col-6" style=" margin:0; height: 100%;" v-for="(c,k) in certificates" :key="k">
       <certificate-card :certificate="c"></certificate-card>
     </div>
   </div>

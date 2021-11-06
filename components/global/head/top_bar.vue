@@ -4,7 +4,34 @@
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/phone.png" alt=""></div><a href="tel:+375173926366">+375173926366</a></div>
+						<div class="top_bar_contact_item">
+              <div class="top_bar_icon"><img src="/images/phone.png" alt=""></div>
+
+              <div class="top_bar_menu">
+								<ul class="standard_dropdown top_bar_dropdown">
+									<li>
+										<a href="tel:+375173926366">+375173926366</a>
+										<ul class="list-phones">
+
+                         <span class="phones_line">
+                           <i class="fab fa-viber"></i>
+                            <a style="display: inline-block; margin-left: 5px;" href="viber:+375173926366">+375297386466</a>
+                         </span>
+
+                       <span class="phones_line">
+                           <i class="fa fa-phone"></i>
+                            <a style="display: inline-block; margin-left: 5px;" href="tel:+375293774710">+375293774710</a>
+                         </span>
+
+
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+            </div>
+
+
 						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/mail.png" alt=""></div><a href="mailto:mixenerdgy@gmail.com">mixenerdgy@mail.ru</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
@@ -47,5 +74,13 @@ export default {
   height: 100%;
   width: 250px;
   padding-top: 2%;
+}
+.phones_line{
+  height: auto;
+  width: auto;
+ margin: 5px;
+}
+.list-phones{
+  width: auto;
 }
 </style>

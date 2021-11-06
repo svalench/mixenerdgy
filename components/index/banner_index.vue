@@ -19,25 +19,45 @@
 				<!-- Popular Categories Slider -->
 
 				<div class="col-lg-9">
-					<el-carousel ref="slider" :arrow="'never'" @next="next" :interval="4000" type="card" height="200px">
+					<el-carousel ref="slider" :arrow="'never'" @next="next" :interval="4000" type="card" height="400px">
             <el-carousel-item v-for="(item,k) in list" :key="k">
-              <b-card img-top style="height: 100%; width: 100%;">
-<!--                <b-card-img width="50%;" :src=""></b-card-img>-->
-                <b-row>
-                  <b-col cols="4">
-                    <el-image   :src="`https://api.mixenerdgy.by/media/${item.img}`" :fit="'contain'"></el-image>
-                  </b-col>
-                  <b-col><b-card-title style="font-size: 14px;">{{item.name}}</b-card-title></b-col>
-                </b-row>
-                <b-row align-v="center">
-                  <b-col cols="5">
-                    <b-card-sub-title>{{item.article}}</b-card-sub-title>
-                  </b-col>
-                  <b-col>
-                    <b-button style="background-color: #0d82d3;" @click="goToProduct(item.id)">перейти</b-button>
-                  </b-col>
-                </b-row>
-              </b-card>
+<!--              <b-card overlay img-top style="height: 100%; width: 100%;">-->
+<!--&lt;!&ndash;                <b-card-img width="50%;" :src=""></b-card-img>&ndash;&gt;-->
+<!--                <b-row>-->
+<!--                  <b-col cols="6" offset="3">-->
+<!--                    <el-image   :src="`https://api.mixenerdgy.by/media/${item.img}`" :fit="'contain'"></el-image>-->
+<!--                  </b-col>-->
+<!--                  </b-row>-->
+<!--                <b-row align-v="center">-->
+<!--                  <b-col><b-card-title style="font-size: 18px; text-align: justify-all;">{{item.name}}</b-card-title></b-col>-->
+<!--                </b-row>-->
+<!--                <b-row align-v="center" style="margin-top: 10%;">-->
+<!--                  <b-col cols="5">-->
+<!--                    <b-card-sub-title>{{item.article}}</b-card-sub-title>-->
+<!--                  </b-col>-->
+<!--                  <b-col>-->
+<!--                    <b-button style="background-color: #0d82d3;" @click="goToProduct(item.id)">перейти</b-button>-->
+<!--                  </b-col>-->
+<!--                </b-row>-->
+<!--              </b-card>-->
+
+
+
+              <div class="card mx-auto mb-3" style="height: 100%; width: 100%;">
+                <!-- Изображение -->
+                <el-image style="height: 150px" class="card-img-top" :fit="'contain'" :src="`https://api.mixenerdgy.by/media/${item.img}`"></el-image>
+                <!-- Текстовый контент -->
+                <div class="card-body h-100">
+                    <h4 class="card-title">{{item.name}}</h4>
+                    <p class="card-text">{{item.card.description.substr(0,100)}}{{item.card.description.length>100?'...':''}}
+                    <a :href="`/catalog/product/${item.id}`" v-if="item.card.description.length>100">читать далее</a>
+                    </p>
+
+                </div>
+                <div class="card-footer">
+                   <a :href="`/catalog/product/${item.id}`" class="btn btn-primary align-content-end">Перейти</a>
+                </div>
+            </div><!-- Конец карточки -->
             </el-carousel-item>
           </el-carousel>
 				</div>
@@ -73,6 +93,7 @@ export default {
     async getRandomProducts(){
       let res = await this.$axios.get('/product/random/')
       this.list = res.data.results;
+      console.log(this.list)
     }
   }
 }

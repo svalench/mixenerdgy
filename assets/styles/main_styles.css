@@ -551,7 +551,7 @@ section
 }
 .logo a
 {
-	font-size: 36px;
+	font-size: 20px;
 	font-weight: 500;
 	color: #0e8ce4;
 }
@@ -1318,8 +1318,8 @@ select option
 
 .characteristics
 {
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .char_item
 {
@@ -2034,8 +2034,8 @@ select option
 
 .popular_categories
 {
-	padding-top: 88px;
-	padding-bottom: 90px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 .popular_categories_title
 {
@@ -3354,8 +3354,8 @@ select option
 .brands
 {
 	width: 100%;
-	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 .brands_slider_container
 {
@@ -3720,7 +3720,7 @@ body{
   overflow-x: hidden;
 }
 .page1{
-  margin-top: 30vh;
+  margin-top: 28vh;
   z-index: 1;
   min-height: 80vh;
   position: relative;
