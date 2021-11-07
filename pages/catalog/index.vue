@@ -1,6 +1,6 @@
 <template>
 <div class="container" >
-  <div class="row" style="padding-top:50px; ">
+  <div class="row" style="padding-top:30px; ">
     <el-breadcrumb separator-class="el-icon-arrow-right">
   <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
   <el-breadcrumb-item>Каталог</el-breadcrumb-item>

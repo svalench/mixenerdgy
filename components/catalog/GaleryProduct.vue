@@ -1,5 +1,6 @@
 <template>
 <div class="galery">
+
         <div class="galery-index">
              <el-image
                 :src="productItems.img"
@@ -7,11 +8,13 @@
             </el-image>
         </div>
         <div class="galery-extra">
+
             <div
             v-for="(img,index) in srcList.slice(1, 3)" :key="img.id"
-            class="galery-extra-block">
+            class="galery-extra-block col">
             <el-image
                 :src="img"
+                :fit="'cover'"
                 :preview-src-list="srcList">
             </el-image>
             <div class="galery-extra-plus" v-if="index == 1 && srcList.length > 3">
@@ -19,6 +22,7 @@
                 <span>+</span>
             </div>
             </div>
+
         </div>
 
     </div>
@@ -73,21 +77,23 @@ export default {
 }
 .galery-index{
     float: left;
-    width: 70%;
+    width: 80%;
     /*height: 280px;*/
     padding: 5px;
 }
 .galery-extra{
+  display: flex;
     float: left;
   height: 30%;
-    width: 30%;
+    width: 40%;
     position: relative;
 }
 .galery-extra-block{
     float: left;
-    width: 100%;
+    width: 60%;
     padding: 5px;
   margin-top: 10%;
+  margin-left: 5%;
       border: #0d82d3 solid;
   border-width: 1px;
     position: relative;

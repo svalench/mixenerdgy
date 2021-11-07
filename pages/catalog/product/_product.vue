@@ -1,7 +1,7 @@
 <template>
 <div>
   <b-container>
-      <div class="row" style="padding-top:50px; ">
+      <div class="row" style="padding-top:30px; ">
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
             <el-breadcrumb-item :to="{ path: '/catalog' }">Каталог</el-breadcrumb-item>
@@ -12,7 +12,7 @@
   <b-row style="padding-top:30px; "><h1 style="font-size: 32px;">{{product.name}}</h1></b-row>
 
   <b-row>
-    <b-col cols="7">
+    <b-col cols="6">
       <b-row>
          <p v-if="$fetchState.pending">Loading....</p>
           <galery-product v-else :productItems="product"></galery-product>
@@ -44,8 +44,8 @@
           {{in_cart?'В корзине':''}}
         </div>
       </div>
-      <b-row style="padding: 5%; margin-top: 10%; text-align: left;">
-         <div><li v-for="(d,c) in product.characteristics_norm" :key="c">{{d.characterisitc.name}}: {{d.value}}</li></div>
+      <b-row style="padding: 2%; margin-top: 10%; text-align: left;">
+        <b-table striped hover :items="product.characteristics_norm" :fields="fields"></b-table>
       </b-row>
     </b-col>
   </b-row>
@@ -62,15 +62,22 @@ import Tabs_product from "../../../components/catalog/tabs_product";
 import GaleryProduct from "../../../components/catalog/GaleryProduct";
 import { mapGetters,mapActions } from 'vuex';
 export default {
-  name: "_product",
+  name: "productCard",
   components: {GaleryProduct, Tabs_product},
   data(){
     return{
+      fields:[
+          {key: 'characterisitc.name', label: 'Название'},
+          {key: 'value', label: 'Значение'},
+          {key: 'unit', label: 'ед. измерения'},
+      ],
        count:0,
       in_cart:false,
       product:[],
       fortabs:[],
       cats:{},
+      others:[], // другие из карточки
+      othersCount:0,
       index: null,
     }
   },
@@ -102,6 +109,9 @@ export default {
     async getProduct(){
       let data = await this.$axios.get(`/product/product/${this.$route.params.product}/`);
       this.product = data.data;
+      let other = await this.$axios.get(`/product/product/?parent=${this.product.parent}`);
+      this.others = other.data.results;
+      this.othersCount = other.data.count;
       this.fortabs = [];
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
       this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
