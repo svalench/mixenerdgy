@@ -47,6 +47,15 @@
       <b-row style="padding: 2%; margin-top: 10%; text-align: left;">
         <b-table striped hover :items="product.characteristics_norm" :fields="fields"></b-table>
       </b-row>
+       <b-row v-if="product.characteristic_show">
+          <div>Другое по {{product.characteristic_show}}</div>
+        </b-row>
+      <b-row>
+          <span class="units-show" v-for="(i,k) in product.brothers" :key="k">
+            <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!=i.id">{{i.value_char_show}} {{i.unit_shows}}</nuxt-link>
+            <span v-else>{{i.value_char_show}} {{i.unit_shows}}</span>
+          </span>
+      </b-row>
     </b-col>
   </b-row>
     <b-row>
@@ -119,6 +128,7 @@ export default {
     this.cats = cats.data;
     },
      addToCart(){
+       console.log(this.product)
         let cart = {count:this.count, product:this.product, id:this.product.id}
         this.ADD_TO_CART(cart);
         this.count = 0;
@@ -162,5 +172,8 @@ export default {
 
 .blockfoto::-webkit-scrollbar {
   display: none;
+}
+.units-show{
+  padding: 2%;
 }
 </style>

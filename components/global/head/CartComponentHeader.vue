@@ -121,7 +121,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.cart)
+
   },
   computed:{
      ...mapGetters({
@@ -159,7 +159,19 @@ export default {
         this.$refs.name.focus();
         return;
       }
-      let data = {user_name:this.name, user_email:this.email, user_phone:this.phone,products:this.cart.map(x=>x.id)}
+      let res1 = await this.$axios.$post('/users/cart/list/products/',
+                                          this.cart.map(x=>{return {product:x.id,count:x.count}})).catch(e=>{
+        this.$message({message:'Возникла ошибка. Обратитесь по телефонам.',type:'error'});
+        return;
+      })
+      console.log(res1)
+      let data = {user_name:this.name,
+                  user_email:this.email,
+                  user_phone:this.phone,
+                  products:this.cart.map(x=>x.id),
+                  list_products: res1.map(x=>x.id),
+      }
+      console.log(data)
       let res = await this.$axios.$post('/users/user/cart/', data).catch(e=>{
         this.$message({message:'Возникла ошибка. Обратитесь по телефонам.',type:'error'});
         return;

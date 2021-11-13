@@ -135,7 +135,7 @@ export default {
 .card-title{
   text-align: center;
   font-size: 15px;
-  height: 60px;
+  height: 100px;
   padding-top: 5%;
   vertical-align: middle;
 }
