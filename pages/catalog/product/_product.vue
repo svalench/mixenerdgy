@@ -47,10 +47,8 @@
       <b-row style="padding: 2%; margin-top: 10%; text-align: left;">
         <b-table striped hover :items="product.characteristics_norm" :fields="fields"></b-table>
       </b-row>
-       <b-row v-if="product.characteristic_show">
-          <div>Другое по {{product.characteristic_show}}</div>
-        </b-row>
-      <b-row>
+      <b-row v-if="product.characteristic_show">
+        <span class="units-show">{{product.characteristic_show}}: </span>
           <span class="units-show" v-for="(i,k) in product.brothers" :key="k">
             <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!=i.id">{{i.value_char_show}} {{i.unit_shows}}</nuxt-link>
             <span v-else>{{i.value_char_show}} {{i.unit_shows}}</span>
