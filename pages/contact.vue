@@ -7,7 +7,41 @@
       </el-breadcrumb>
     </div>
     <div class="row" style="padding-top:30px;">
-      <div class=" col-lg-5 col-xs-12" style=" overflow: auto;">
+      <div class="col-lg-12  col-xs-12">
+        <div class="row">
+          <h4 style="font-size: 28px; color: #0d82d3; padding: 10px;">Реквизиты: </h4><br>
+        </div>
+        <div class="row">
+             <p class="text-recivitor">Название: ООО "Миксэнерджи"</p>
+          </div>
+        <div class="row">
+             <p  class="text-recivitor">Юр.адрес/почтовый адрес: 220007, г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17</p>
+          </div>
+        <div class="row">
+          <p class="text-recivitor">УНП:193243351</p>
+        </div>
+        <div class="row">
+          <p class="text-recivitor">Счет: BY20ALFA30122474210010270000</p>
+        </div>
+        <div class="row">
+          <p class="text-recivitor">в ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</p>
+        </div>
+        <div class="row">
+          <p class="text-recivitor">БИК: ALFABY2X</p>
+        </div>
+        <div class="row">
+          <p class="text-recivitor"> Директор Михашонок Сергей Васильевич, на основании Устава Приказ № 8-К от 19.02.2020г.</p>
+        </div>
+        <div class="row">
+          <div class="col"><p class="text-recivitor">mixenerdgy@mail.ru</p></div>
+          <div class="col"><p class="text-recivitor"> тел/факс:+375173926366</p></div>
+          <div class="col"><p class="text-recivitor">тел:+37529-377-47-10</p></div>
+        </div>
+ <div class="row"><p><a href="/docs/Реквизиты_МиксЭнерджи.docx">Скачать реквизиты</a></p></div>
+
+      </div>
+
+      <div class=" col-lg-12 col-xs-12" style=" overflow: auto;">
         <div class="row">
           <div style="display: block;">
             <h4 style="font-size: 28px; color: #0d82d3; padding: 10px;">Склад (пункт самовывоза): </h4>
@@ -27,41 +61,13 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-7  col-xs-12">
-        <div class="row">
-          <h4 style="font-size: 28px; color: #0d82d3; padding: 10px;">Реквизиты: </h4><br>
 
-          <p>Юр.адрес/почтовый адрес: 220007, г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17</p>
-        </div>
-        <div class="row">
-          <p>УНП:193243351</p>
-        </div>
-        <div class="row">
-          <p>Счет: BY20ALFA30122474210010270000</p>
-        </div>
-        <div class="row">
-          <p>в ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</p>
-        </div>
-        <div class="row">
-          <p>БИК: ALFABY2X</p>
-        </div>
-        <div class="row">
-          <p> Директор Михашонок Сергей Васильевич, на основании Устава Приказ № 8-К от 19.02.2020г.</p>
-        </div>
-        <div class="row">
-          <div class="col"><p>mixenerdgy@mail.ru</p></div>
-          <div class="col"><p> тел/факс:+375173926366</p></div>
-          <div class="col"><p>тел:+37529-377-47-10</p></div>
-        </div>
- <div class="row"><p><a href="/docs/Реквизиты_МиксЭнерджи.docx">Скачать реквизиты</a></p></div>
-
-      </div>
     </div>
     <div class="row align-content-center">
-      <div>
+      <div style="margin-left: 12%">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e610803a4d59a683c1b1b4076f418568a1606d3ce37923db82f75ec01727438&amp;source=constructor"
-          width="1200" height="700" frameborder="0"></iframe>
+          width="800" height="600" frameborder="0"></iframe>
       </div>
     </div>
   </div>
@@ -75,5 +81,10 @@ export default {
 </script>
 
 <style scoped>
+.text-recivitor{
+  text-align: left;
+  font-size: 16px;
+  color: black;
 
+}
 </style>
