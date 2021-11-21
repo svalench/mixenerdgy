@@ -4,9 +4,9 @@
     <b-card-title style="font-size: 20px; min-height: 50px;" >{{certificate.name}}</b-card-title>
     <b-card-sub-title style="font-size: 12px;">{{(new Date(certificate.date_add)).toLocaleString('ru-RU')}}</b-card-sub-title>
     <b-card-text style="overflow:auto;">
-          <object :data="`${certificate.doc}#view=FitH&scrollbar=0&toolbar=0&navpanes=0`" height="200"
-          type="application/pdf" trusted="yes">
-            <p>Insert your error message here, if the PDF cannot be displayed.</p>
+          <object trusted="yes" :data="`${certificate.doc}#view=FitH&scrollbar=0&toolbar=0&navpanes=0`" height="200"
+          type="application/pdf">
+            <p>Не удалось загрузить документ.</p>
       </object>
     </b-card-text>
   </b-card>
