@@ -55,6 +55,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
      // '@nuxtjs/vuetify',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -80,13 +81,25 @@ export default {
    axios: {
     proxy: false,
     baseURL: "https://api.mixenerdgy.by/"
-    // baseURL: "http://api.beautymasters.online/"
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
       lang: 'en'
+    },
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: 'https://api.mixenerdgy.by/.*',
+          // handler: 'networkFirst',
+          method: 'GET',
+          strategyOptions: {
+            cacheName: 'my-api-cache',
+            cacheableResponse: {statuses: [0, 200]}
+          }
+        }
+      ]
     }
   },
 
