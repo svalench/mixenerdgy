@@ -117,7 +117,6 @@ export default {
       let data = await this.$axios.get(`/product/product/${this.$route.params.product}/`);
       this.product = data.data;
       let other = await this.$axios.get(`/product/card/${this.product.parent}/`);
-      console.log(other.data.child)
       this.others = other.data.child;
       this.othersCount = 0;
       this.fortabs = [];
