@@ -12,30 +12,32 @@
           <h4 style="font-size: 28px; color: #0d82d3; padding: 10px;">Реквизиты: </h4><br>
         </div>
         <div class="row">
-             <p class="text-recivitor">Название: ООО "Миксэнерджи"</p>
+             <h4 class="text-recivitor">Название: ООО "Миксэнерджи"</h4>
           </div>
         <div class="row">
-             <p  class="text-recivitor">Юр.адрес/почтовый адрес: 220007, г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17</p>
+             <h4  class="text-recivitor">Юр.адрес/почтовый адрес: 220007, г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17</h4>
           </div>
         <div class="row">
-          <p class="text-recivitor">УНП:193243351</p>
+          <h4 class="text-recivitor">УНП:193243351</h4>
         </div>
         <div class="row">
-          <p class="text-recivitor">Счет: BY20ALFA30122474210010270000</p>
+          <h4 class="text-recivitor">Счет: BY20ALFA30122474210010270000</h4>
         </div>
         <div class="row">
-          <p class="text-recivitor">в ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</p>
+          <h4 class="text-recivitor">в ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</h4>
         </div>
         <div class="row">
-          <p class="text-recivitor">БИК: ALFABY2X</p>
+          <h4 class="text-recivitor">БИК: ALFABY2X</h4>
         </div>
         <div class="row">
-          <p class="text-recivitor"> Директор Михашонок Сергей Васильевич, на основании Устава Приказ № 8-К от 19.02.2020г.</p>
+          <h5 class="text-recivitor"> Директор Михашонок Сергей Васильевич, на основании Устава Приказ № 8-К от 19.02.2020г.</h5>
         </div>
         <div class="row">
-          <div class="col"><p class="text-recivitor">mixenerdgy@mail.ru</p></div>
-          <div class="col"><p class="text-recivitor"> тел/факс:+375173926366</p></div>
-          <div class="col"><p class="text-recivitor">тел:+37529-377-47-10</p></div>
+          <div class="col">
+          <div class="row"><h5 class="text-recivitor">mixenerdgy@mail.ru</h5></div>
+          <div class="row"><h5 class="text-recivitor"> тел/факс:+375173926366</h5></div>
+          <div class="row"><h5 class="text-recivitor">тел:+37529-377-47-10</h5></div>
+            </div>
         </div>
  <div class="row"><p><a href="/docs/Реквизиты_МиксЭнерджи.docx">Скачать реквизиты</a></p></div>
 
@@ -83,7 +85,7 @@ export default {
 <style scoped>
 .text-recivitor{
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
 
 }

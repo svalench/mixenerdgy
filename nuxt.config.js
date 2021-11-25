@@ -33,12 +33,12 @@ export default {
     '@/assets/styles/bootstrap4/bootstrap.min.css',
     '@/assets/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css',
     '@/assets/styles/main_styles.css',
-    '@/assets/styles/product_responsive.css',
+    // '@/assets/styles/product_responsive.css',
     '@/assets/styles/responsive.css',
-    '@/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css',
-    '@/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css',
-    '@/assets/plugins/OwlCarousel2-2.2.1/animate.css',
-    '@/assets/plugins/slick-1.8.0/slick.css',
+    // '@/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css',
+    // '@/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css',
+    // '@/assets/plugins/OwlCarousel2-2.2.1/animate.css',
+    // '@/assets/plugins/slick-1.8.0/slick.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

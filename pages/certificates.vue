@@ -13,7 +13,18 @@
     <div class="col">
   <div class="row" >
     <div class="col-6" style=" margin:0; height: 100%;" v-for="(c,k) in certificates" :key="k">
-      <certificate-card :certificate="c"></certificate-card>
+<!--      <certificate-card :certificate="c"></certificate-card>-->
+       <a target="_blank" :href="c.doc">
+  <b-card class="cardCert" style="margin: 5%;">
+    <b-card-title style="font-size: 20px; min-height: 50px;" >{{c.name}}</b-card-title>
+    <b-card-text style="overflow:auto;">
+          <object trusted="yes" :data="`${c.doc}#view=FitH&scrollbar=0&toolbar=0&navpanes=0`" height="200"
+          type="application/pdf">
+            <p>Не удалось загрузить документ.</p>
+      </object>
+    </b-card-text>
+  </b-card>
+    </a>
     </div>
   </div>
       </div>
