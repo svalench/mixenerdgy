@@ -49,7 +49,7 @@
       </b-row>
       <b-row v-if="product.characteristic_show">
         <span class="units-show">{{product.characteristic_show}}: </span>
-          <span class="units-show" v-for="(i,k) in product.brothers" :key="k">
+          <span class="units-show" v-for="(i,k) in others" :key="k">
             <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!=i.id">{{i.value_char_show}} {{i.unit_shows}}</nuxt-link>
             <span v-else>{{i.value_char_show}} {{i.unit_shows}}</span>
           </span>
@@ -116,9 +116,10 @@ export default {
     async getProduct(){
       let data = await this.$axios.get(`/product/product/${this.$route.params.product}/`);
       this.product = data.data;
-      let other = await this.$axios.get(`/product/product/?parent=${this.product.parent}`);
-      this.others = other.data.results;
-      this.othersCount = other.data.count;
+      let other = await this.$axios.get(`/product/card/${this.product.parent}/`);
+      console.log(other.data.child)
+      this.others = other.data.child;
+      this.othersCount = 0;
       this.fortabs = [];
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
       this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
