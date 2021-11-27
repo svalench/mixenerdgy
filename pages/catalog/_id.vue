@@ -105,7 +105,7 @@ export default {
       let params = '';
       this.offset = (this.currentPage-1)*this.limit;
       if(this.cat!==null){
-        params += `&parent__category=${this.cat}`
+        params += `&parent__category=${this.cat}&ordering=id`
       }
       if(this.$route.query.filter){
         if(Array.isArray(this.$route.query.filter)){
