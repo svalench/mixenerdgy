@@ -23,9 +23,9 @@
         </div>
         <div class="col-6" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
            <b-button @click="addToCart"  variant="outline-primary" size="sm" >
-             В корзину
+              {{in_cart?'Добавлено':'В корзину'}}
           </b-button>
-          {{in_cart?'В корзине':''}}
+
         </div>
       </div>
 

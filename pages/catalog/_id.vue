@@ -1,14 +1,14 @@
 <template>
-<div class="container" >
-  <div class="row" style="padding-top:30px; ">
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+<div class="container"  >
+  <div ref="breds"></div>
+  <div class="row" style="padding-top:30px;" >
+    <el-breadcrumb separator-class="el-icon-arrow-right"  >
   <el-breadcrumb-item :to="{ path: '/' }">Главная</el-breadcrumb-item>
   <el-breadcrumb-item :to="{ path: '/catalog' }">Каталог</el-breadcrumb-item>
   <el-breadcrumb-item >{{cats.name}}</el-breadcrumb-item>
 </el-breadcrumb>
   </div>
   <div class="row" style="padding-top:30px; ">
-    <div class="col-1 d-xs-block d-sm-none" > > </div>
     <div class="col-3 bv-d-xs-down-none bv-d-sm-down-none filterblock"  style="max-height: 100vh; overflow: auto;">
     <my_filter></my_filter>
     </div>
@@ -33,6 +33,7 @@
         </div>
     </div>
   </div>
+  <button @click="moveTo()" class="hidebtn" ref="upBtn" id="myBtn" title="Go to top">Вверх</button>
 </div>
 </template>
 
@@ -54,11 +55,13 @@ export default {
       cats:{},
     }
   },
-  async mounted() {
-    let data = await this.$axios.get(`/catalog/categories/second/${this.$route.params.id}/`);
-    this.cats = data.data;
+  mounted() {
+    this.onScroll();
+   window.addEventListener("scroll", this.onScroll)
   },
   async fetch(){
+    let data = await this.$axios.get(`/catalog/categories/second/${this.$route.params.id}/`);
+    this.cats = data.data;
     this.cat = this.$route.params.id;
     this.currentPage = this.$route.query['page']?this.$route.query['page']:1;
     await this.getPorductsList()
@@ -69,11 +72,33 @@ export default {
       this.getPorductsList()
     }
   },
+    beforeDestroy() {
+      window.removeEventListener("scroll", this.onScroll)
+      },
   methods:{
+     onScroll(e) {
+        var btn = this.$refs.upBtn;
+        if (window.top.scrollY < 450) {
+          btn.classList.add('hidebtn')
+        } else {
+          btn.classList.remove('hidebtn')
+        }
+    },
+    moveTo () {
+        let to = 0
+        window.scroll({
+          top: to,
+          left: 0,
+          behavior: 'smooth'
+        })
+
+        this.moveToDown = !this.moveToDown
+      },
     paginate(){
       this.$router.push({ path: this.$route.path,
         query: { page: this.currentPage, filter: this.$route.query.filter?this.$route.query.filter:[] }})
       this.getPorductsList()
+      this.moveTo()
     },
     async getPorductsList(){
       this.show = true;
@@ -125,5 +150,26 @@ export default {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
   border-radius: 10px;
   background-color: #b7def3;
+}
+.hidebtn{
+  display: none; /* Hidden by default */
+}
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #0e8ce4; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 </style>
