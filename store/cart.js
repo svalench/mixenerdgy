@@ -17,14 +17,16 @@ export const mutations = {
       }
       state.count = 0;
       for(let x of state.cart){
-        state.count += x.count;
+        state.count = parseInt(state.count)
+        state.count +=x.count-0;
       }
   },
   SET_CART(state,product){
         let ccc = state.cart.find(
           function (x){
+            x.count = parseInt(x.count)
             if(x.id===product.id){
-              x.count+=product.count;
+              x.count+=product.count-0;
               return x
             }
           }
@@ -34,7 +36,8 @@ export const mutations = {
         }
        state.count = 0;
         for(let x of state.cart){
-          state.count += x.count;
+          state.count = parseInt(state.count)
+          state.count += x.count-0;
         }
     },
 
@@ -44,14 +47,14 @@ export const mutations = {
             if(x.id===product_id){
               x.count = x.count-0
               x.count-=1;
-              x.count = x.count<0?0:x.count;
+              x.count = x.count<0?0:x.count-0;
               return x
             }
           }
         );
       state.count = 0;
         for(let x of state.cart){
-          state.count += x.count;
+          state.count += x.count-0;
         }
   },
   COUNT_UP(state, product_id){
@@ -60,14 +63,15 @@ export const mutations = {
             if(x.id===product_id){
               x.count = x.count-0
               x.count+=1;
-              x.count = x.count<0?0:x.count;
+              x.count = x.count<0?0:x.count-0;
               return x
             }
           }
         );
    state.count = 0;
         for(let x of state.cart){
-          state.count += x.count;
+          state.count = parseInt(state.count)
+          state.count += x.count-0;
         }
   },
   SET_COUNT(state, {product_id, value}){
@@ -80,14 +84,15 @@ export const mutations = {
             if(x.id===product_id){
               x.count = x.count-0
               x.count=value;
-              x.count = x.count<0?0:x.count;
+              x.count = x.count<0?0:x.count-0;
               return x
             }
           }
         );
     state.count = 0;
         for(let x of state.cart){
-          state.count += x.count;
+          state.count = parseInt(state.count)
+          state.count += x.count-0;
         }
   },
 }

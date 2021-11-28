@@ -4,7 +4,7 @@
     <b-tabs card>
       <b-tab v-for="(i,k) in data" :title="i.name" :key="k" >
         <b-card-text v-if="Array.isArray(i.data)">
-            <div><li v-for="(d,c) in i.data" :key="c">{{d.characterisitc.name}}: {{d.value}}</li></div>
+            <div><li v-for="(d,c) in i.data" :key="c">{{d.characterisitc.name}}: {{d.value}} {{d.unit!=='-'?d.unit:''}}</li></div>
         </b-card-text>
         <b-card-text v-else>
           <div>{{i.data}}</div>

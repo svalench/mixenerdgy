@@ -595,7 +595,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(4).default
 module.exports.__inject__ = function (context) {
-  add("50651a0e", content, true, context)
+  add("3a53eb30", content, true, context)
 };
 
 /***/ }),
@@ -793,12 +793,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/head/top_bar.vue?vue&type=template&id=8cb549ba&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"top_bar\" data-v-8cb549ba><div class=\"container\" data-v-8cb549ba><div class=\"row\" data-v-8cb549ba><div class=\"col d-flex flex-row\" data-v-8cb549ba><div class=\"top_bar_contact_item\" data-v-8cb549ba><div class=\"top_bar_icon\" data-v-8cb549ba><img src=\"/images/phone.png\" alt data-v-8cb549ba></div> <div class=\"top_bar_menu\" data-v-8cb549ba><ul class=\"standard_dropdown top_bar_dropdown\" data-v-8cb549ba><li data-v-8cb549ba><a href=\"tel:+375173926366\" data-v-8cb549ba>+375173926366</a> <ul class=\"list-phones\" data-v-8cb549ba><span class=\"phones_line\" data-v-8cb549ba><i class=\"fab fa-viber\" data-v-8cb549ba></i> <a href=\"viber:+375173926366\" style=\"display: inline-block; margin-left: 5px;\" data-v-8cb549ba>+375297386466</a></span> <span class=\"phones_line\" data-v-8cb549ba><i class=\"fa fa-phone\" data-v-8cb549ba></i> <a href=\"tel:+375293774710\" style=\"display: inline-block; margin-left: 5px;\" data-v-8cb549ba>+375293774710</a></span></ul></li></ul></div></div> <div class=\"top_bar_contact_item\" data-v-8cb549ba><div class=\"top_bar_icon\" data-v-8cb549ba><img src=\"/images/mail.png\" alt data-v-8cb549ba></div><a href=\"mailto:mixenerdgy@gmail.com\" data-v-8cb549ba>mixenerdgy@mail.ru</a></div> <div class=\"top_bar_content ml-auto\" data-v-8cb549ba><div class=\"top_bar_menu\" data-v-8cb549ba><ul class=\"standard_dropdown top_bar_dropdown\" data-v-8cb549ba><li data-v-8cb549ba><span data-v-8cb549ba><i class=\"far fa-clock\" data-v-8cb549ba></i><a href=\"#\" style=\"display: inline-block; margin-left: 5px;\" data-v-8cb549ba>8.30-17.30<i class=\"fas fa-chevron-down\" data-v-8cb549ba></i></a></span> <ul data-v-8cb549ba><li class=\"timework_line\" data-v-8cb549ba>Понедельник  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-8cb549ba>Вторник  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-8cb549ba>Среда  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-8cb549ba>Четверг  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-8cb549ba>Пятница  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-8cb549ba>Суббота  -  Выходной</li> <li class=\"timework_line\" data-v-8cb549ba>Воскресенье  -  Выходной</li></ul></li></ul></div></div></div></div></div></div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/head/top_bar.vue?vue&type=template&id=98212620&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<div class=\"top_bar\" data-v-98212620><div class=\"container\" data-v-98212620><div class=\"row\" data-v-98212620><div class=\"col d-flex flex-row\" data-v-98212620><div class=\"top_bar_contact_item\" data-v-98212620><div class=\"top_bar_icon\" data-v-98212620><i class=\"fa fa-phone\" data-v-98212620></i></div> <div class=\"top_bar_menu\" data-v-98212620><ul class=\"standard_dropdown top_bar_dropdown\" data-v-98212620><li data-v-98212620><a href=\"tel:+375173926366\" data-v-98212620>+375173926366</a> <ul class=\"list-phones\" data-v-98212620><span class=\"phones_line\" data-v-98212620><i class=\"fab fa-viber\" data-v-98212620></i> <a href=\"viber:+375173926366\" style=\"display: inline-block; margin-left: 5px;\" data-v-98212620>+375297386466</a></span> <span class=\"phones_line\" data-v-98212620><img src=\"/images/phone.png\" alt data-v-98212620> <a href=\"tel:+375293774710\" style=\"display: inline-block; margin-left: 5px;\" data-v-98212620>+375293774710</a></span></ul></li></ul></div></div> <div class=\"top_bar_contact_item\" data-v-98212620><div class=\"top_bar_icon\" data-v-98212620><img src=\"/images/mail.png\" alt data-v-98212620></div><a href=\"mailto:mixenerdgy@gmail.com\" data-v-98212620>mixenerdgy@mail.ru</a></div> <div class=\"top_bar_content ml-auto\" data-v-98212620><div class=\"top_bar_menu\" data-v-98212620><ul class=\"standard_dropdown top_bar_dropdown\" style=\"text-align: center;\" data-v-98212620><li data-v-98212620><span data-v-98212620><i class=\"far fa-clock\" data-v-98212620></i><a href=\"#\" style=\"display: inline-block; margin-left: 5px;\" data-v-98212620>8.30-17.30<i class=\"fas fa-chevron-down\" data-v-98212620></i></a></span> <ul data-v-98212620><li class=\"timework_line\" data-v-98212620>Понедельник  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-98212620>Вторник  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-98212620>Среда  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-98212620>Четверг  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-98212620>Пятница  - с 8.30 до 17.30</li> <li class=\"timework_line\" data-v-98212620>Суббота  -  Выходной</li> <li class=\"timework_line\" data-v-98212620>Воскресенье  -  Выходной</li></ul></li></ul></div></div></div></div></div></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/global/head/top_bar.vue?vue&type=template&id=8cb549ba&scoped=true&
+// CONCATENATED MODULE: ./components/global/head/top_bar.vue?vue&type=template&id=98212620&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/head/top_bar.vue?vue&type=script&lang=js&
 //
@@ -893,7 +893,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "8cb549ba",
+  "98212620",
   "d1b0ab38"
   
 )
@@ -1395,12 +1395,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/head/head_navigation.vue?vue&type=template&id=21568586&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"main_nav"},[_vm._ssrNode("<div class=\"container\" data-v-21568586>","</div>",[_vm._ssrNode("<div class=\"row\" data-v-21568586>","</div>",[_vm._ssrNode("<div class=\"col\" data-v-21568586>","</div>",[_vm._ssrNode("<div class=\"main_nav_content d-flex flex-row\" data-v-21568586>","</div>",[_vm._ssrNode("<div class=\"cat_menu_container hidemenu\" data-v-21568586>","</div>",[_vm._ssrNode("<div class=\"cat_menu_title d-flex flex-row align-items-center justify-content-start\" data-v-21568586><div class=\"cat_burger\" data-v-21568586><span data-v-21568586></span><span data-v-21568586></span><span data-v-21568586></span></div> <div class=\"cat_menu_text\" data-v-21568586>категории</div></div> "),_vm._ssrNode("<ul class=\"cat_menu\" data-v-21568586>","</ul>",_vm._l((_vm.menu),function(i,k){return _vm._ssrNode("<li class=\"hassubs\" data-v-21568586>","</li>",[_vm._ssrNode("<a href=\"#\" data-v-21568586>"+_vm._ssrEscape(_vm._s(i.name))+"<i class=\"fas fa-chevron-right\" data-v-21568586></i></a> "),_vm._ssrNode("<ul data-v-21568586>","</ul>",[_vm._ssrNode("<div class=\"row\" data-v-21568586>","</div>",_vm._l((i.child),function(j,k){return _vm._ssrNode("<div class=\"col-6\" data-v-21568586>","</div>",[_c('nuxt-link',{attrs:{"to":("/catalog/" + (j.id))}},[_c('b-row',[_c('b-col',{attrs:{"cols":"3"}},[_c('b-img',{attrs:{"src":j.img,"fluid":""}})],1),_vm._v(" "),_c('b-col',[_vm._v(_vm._s(j.name))])],1)],1)],1)}),0)])],2)}),0)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"main_nav_menu \" data-v-21568586>","</div>",[_vm._ssrNode("<ul class=\"standard_dropdown main_nav_dropdown\" data-v-21568586>","</ul>",[_vm._ssrNode("<li data-v-21568586>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v("Главная"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-21568586>","</li>",[_c('nuxt-link',{attrs:{"to":"/catalog"}},[_vm._v("Каталог"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-21568586>","</li>",[_c('nuxt-link',{attrs:{"to":"/about"}},[_vm._v("О нас"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-21568586>","</li>",[_c('nuxt-link',{attrs:{"to":"/certificates"}},[_vm._v("Сертификаты"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-21568586>","</li>",[_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("Контакты"),_c('i',{staticClass:"fas fa-chevron-down"})])],1)],2)]),_vm._ssrNode(" <div class=\"menu_trigger_container ml-auto\" data-v-21568586><div class=\"menu_trigger d-flex flex-row align-items-center justify-content-end\" data-v-21568586><div class=\"menu_burger\" data-v-21568586><div class=\"menu_trigger_text\" data-v-21568586>menu</div> <div class=\"cat_burger menu_burger_inner\" data-v-21568586><span data-v-21568586></span><span data-v-21568586></span><span data-v-21568586></span></div></div></div></div>")],2)])])])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/head/head_navigation.vue?vue&type=template&id=18d67830&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"main_nav"},[_vm._ssrNode("<div class=\"container\" data-v-18d67830>","</div>",[_vm._ssrNode("<div class=\"row\" data-v-18d67830>","</div>",[_vm._ssrNode("<div class=\"col\" data-v-18d67830>","</div>",[_vm._ssrNode("<div class=\"main_nav_content d-flex flex-row\" data-v-18d67830>","</div>",[_vm._ssrNode("<div class=\"cat_menu_container hidemenu\" data-v-18d67830>","</div>",[_vm._ssrNode("<div class=\"cat_menu_title d-flex flex-row align-items-center justify-content-start\" data-v-18d67830><div class=\"cat_burger\" data-v-18d67830><span data-v-18d67830></span><span data-v-18d67830></span><span data-v-18d67830></span></div> <div class=\"cat_menu_text\" data-v-18d67830>категории</div></div> "),_vm._ssrNode("<ul class=\"cat_menu\" data-v-18d67830>","</ul>",_vm._l((_vm.menu),function(i,k){return _vm._ssrNode("<li class=\"hassubs\" data-v-18d67830>","</li>",[_vm._ssrNode("<a href=\"#\" data-v-18d67830>"+_vm._ssrEscape(_vm._s(i.name))+"<i class=\"fas fa-chevron-right\" data-v-18d67830></i></a> "),_vm._ssrNode("<ul data-v-18d67830>","</ul>",[_vm._ssrNode("<div class=\"row\" data-v-18d67830>","</div>",_vm._l((i.child),function(j,k){return _vm._ssrNode("<div class=\"col-6\" data-v-18d67830>","</div>",[_c('nuxt-link',{attrs:{"to":("/catalog/" + (j.id))}},[_c('b-row',[_c('b-col',{attrs:{"cols":"3"}},[_c('b-img',{attrs:{"src":j.img,"fluid":""}})],1),_vm._v(" "),_c('b-col',[_vm._v(_vm._s(j.name))])],1)],1)],1)}),0)])],2)}),0)],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"main_nav_menu \" data-v-18d67830>","</div>",[_vm._ssrNode("<ul class=\"standard_dropdown main_nav_dropdown\" data-v-18d67830>","</ul>",[_vm._ssrNode("<li data-v-18d67830>","</li>",[_c('nuxt-link',{attrs:{"to":"/"}},[_vm._v("Главная"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-18d67830>","</li>",[_c('nuxt-link',{attrs:{"to":"/catalog"}},[_vm._v("Каталог"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-18d67830>","</li>",[_c('nuxt-link',{attrs:{"to":"/about"}},[_vm._v("О нас"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-18d67830>","</li>",[_c('nuxt-link',{attrs:{"to":"/certificates"}},[_vm._v("Сертификаты"),_c('i',{staticClass:"fas fa-chevron-down"})])],1),_vm._ssrNode(" "),_vm._ssrNode("<li data-v-18d67830>","</li>",[_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("Контакты"),_c('i',{staticClass:"fas fa-chevron-down"})])],1)],2)]),_vm._ssrNode(" <div class=\"menu_trigger_container ml-auto\" data-v-18d67830><div class=\"menu_trigger d-flex flex-row align-items-center justify-content-end\" data-v-18d67830><div class=\"menu_burger\" data-v-18d67830><div class=\"menu_trigger_text\" data-v-18d67830>menu</div> <div class=\"cat_burger menu_burger_inner\" data-v-18d67830><span data-v-18d67830></span><span data-v-18d67830></span><span data-v-18d67830></span></div></div></div></div>")],2)])])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/global/head/head_navigation.vue?vue&type=template&id=21568586&scoped=true&
+// CONCATENATED MODULE: ./components/global/head/head_navigation.vue?vue&type=template&id=18d67830&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/head/head_navigation.vue?vue&type=script&lang=js&
 //
@@ -1523,19 +1523,8 @@ var staticRenderFns = []
     },
 
     async getCategories() {
-      let data = await this.$axios.get('/catalog/categories/');
+      let data = await this.$axios.get('/catalog/categories/?ordering=-weight_in_menu');
       this.menu = data.data.results;
-      this.menu.sort(function (a, b) {
-        if (a.name < b.name) {
-          return -1;
-        }
-
-        if (a.name > b.name) {
-          return 1;
-        }
-
-        return 0;
-      });
       this.$forceUpdate();
     }
 
@@ -1568,7 +1557,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "21568586",
+  "18d67830",
   "42155e0e"
   
 )
@@ -1678,14 +1667,17 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/footer/footer_site.vue?vue&type=template&id=23e6f1d3&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_vm._ssrNode("<div class=\"container\" data-v-23e6f1d3><div class=\"row\" data-v-23e6f1d3><div class=\"col-lg-5 footer_col\" data-v-23e6f1d3><div class=\"footer_column footer_contact\" data-v-23e6f1d3><div class=\"logo_container\" data-v-23e6f1d3><div class=\"logo\" data-v-23e6f1d3><a href=\"#\" data-v-23e6f1d3>ООО &quot;Миксэнерджи&quot; ™</a></div></div> <div class=\"footer_title\" data-v-23e6f1d3>Остались вопросы? Позвоните нам!</div> <div class=\"footer_phone\" data-v-23e6f1d3><a href=\"tel:+375173926366\" data-v-23e6f1d3>+375173926366</a></div> <div class=\"footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3>ул. Артиллеристов, дом № 8, корпус 3, офис 17</p> <p data-v-23e6f1d3>г. Минск, Республика Беларусь</p></div></div></div> <div class=\"col-lg-4\" data-v-23e6f1d3><iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3A6e610803a4d59a683c1b1b4076f418568a1606d3ce37923db82f75ec01727438&source=constructor\" width=\"300\" height=\"200\" frameborder=\"0\" data-v-23e6f1d3></iframe></div> <div class=\"col-lg-2\" data-v-23e6f1d3><div class=\"footer_column\" data-v-23e6f1d3><div class=\"footer_title\" data-v-23e6f1d3>Дополнительная информация</div> <ul class=\"footer_list\" data-v-23e6f1d3><li data-v-23e6f1d3><img width=\"100%\" src=\"/img/akkreditovany-na-BUTB.jpg\" data-v-23e6f1d3></li> <li data-v-23e6f1d3><a href=\"http://juguni.by\" target=\"_blank\" data-v-23e6f1d3>juguni.by</a></li></ul></div></div> <div class=\"col-lg-1\" data-v-23e6f1d3><div class=\"footer_column\" data-v-23e6f1d3><div class=\"footer_title\" data-v-23e6f1d3>Навигация</div> <ul class=\"footer_list\" data-v-23e6f1d3><li data-v-23e6f1d3><a href=\"/\" data-v-23e6f1d3>Главная</a></li> <li data-v-23e6f1d3><a href=\"/catalog\" data-v-23e6f1d3>Каталог</a></li> <li data-v-23e6f1d3><a href=\"/about\" data-v-23e6f1d3>О нас</a></li> <li data-v-23e6f1d3><a href=\"/certificates\" data-v-23e6f1d3>Сертификаты</a></li> <li data-v-23e6f1d3><a href=\"/contact\" data-v-23e6f1d3>Контакты</a></li></ul></div></div></div> <hr data-v-23e6f1d3> <div class=\"d-none d-lg-block\" data-v-23e6f1d3><div class=\"row \" data-v-23e6f1d3><div class=\"col-lg-9\" data-v-23e6f1d3><div class=\"footer_title\" data-v-23e6f1d3>Реквизиты</div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3>Юр.адрес/почтовый адрес: 220007,  г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17 </p></div></div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3>Счет: BY20ALFA30122474210010270000\n            в ЗАО &quot;АЛЬФА-БАНК&quot; г. Минск, ул. Сурганова, 43-47</p></div></div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3>Директор Михашонок Сергей Васильевич, на основании Устава\n              Приказ № 8-К от 19.02.2020г.\n          </p></div></div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3><a href=\"/docs/Реквизиты_МиксЭнерджи.docx\" target=\"_blank\" data-v-23e6f1d3>Скачать реквизиты</a></p></div></div></div> <div class=\"col\" data-v-23e6f1d3><div class=\"footer_title\" style=\"color: #1e2f4c;\" data-v-23e6f1d3>--</div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3>УНП:193243351</p></div></div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3>БИК: ALFABY2X</p></div></div> <div class=\"row\" data-v-23e6f1d3><div class=\" col-lg-12 footer_contact_text\" data-v-23e6f1d3><p data-v-23e6f1d3><i class=\"fas fa-envelope\" data-v-23e6f1d3></i> mixenerdgy@mail.ru </p> <p data-v-23e6f1d3><i class=\"fa fa-phone\" data-v-23e6f1d3></i> тел/факс:+375173926366 </p> <p data-v-23e6f1d3><i class=\"fa fa-phone\" data-v-23e6f1d3></i> тел:+37529-377-47-10 </p></div></div></div></div></div></div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/footer/footer_site.vue?vue&type=template&id=3c62aeab&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_vm._ssrNode("<div class=\"container\" data-v-3c62aeab><div class=\"row\" data-v-3c62aeab><div class=\"col-lg-5 footer_col\" data-v-3c62aeab><div class=\"footer_column footer_contact\" data-v-3c62aeab><div class=\"logo_container\" data-v-3c62aeab><div class=\"logo\" data-v-3c62aeab><a href=\"#\" data-v-3c62aeab>ООО &quot;МиксЭнерджи&quot; ™</a></div></div> <div class=\"footer_title\" data-v-3c62aeab>Остались вопросы? Позвоните нам!</div> <div class=\"footer_phone\" data-v-3c62aeab><a href=\"tel:+375173926366\" data-v-3c62aeab>+375173926366</a></div> <div class=\"footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab>ул. Артиллеристов, дом № 8, корпус 3, офис 17</p> <p data-v-3c62aeab>г. Минск, Республика Беларусь</p> <p data-v-3c62aeab>Сайт catalog.mixenerdgy.by не является интернет-магазином.</p> <p data-v-3c62aeab>На сайте представлен только ассортимент наших товаров.</p> <p data-v-3c62aeab>На нем отсутствует  возможность заказа online и оплаты за товар дистанционным путем.</p></div></div></div> <div class=\"col-lg-4\" data-v-3c62aeab><iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3A6e610803a4d59a683c1b1b4076f418568a1606d3ce37923db82f75ec01727438&source=constructor\" width=\"300\" height=\"200\" frameborder=\"0\" data-v-3c62aeab></iframe></div> <div class=\"col-lg-2\" data-v-3c62aeab><div class=\"footer_column\" data-v-3c62aeab><div class=\"footer_title\" data-v-3c62aeab>Дополнительная информация</div> <ul class=\"footer_list\" data-v-3c62aeab><li data-v-3c62aeab><img width=\"100%\" src=\"/img/akkreditovany-na-BUTB.jpg\" data-v-3c62aeab></li> <li data-v-3c62aeab><a href=\"http://juguni.by\" target=\"_blank\" data-v-3c62aeab>juguni.by</a></li></ul></div></div> <div class=\"col-lg-1\" data-v-3c62aeab><div class=\"footer_column\" data-v-3c62aeab><div class=\"footer_title\" data-v-3c62aeab>Навигация</div> <ul class=\"footer_list\" data-v-3c62aeab><li data-v-3c62aeab><a href=\"/\" data-v-3c62aeab>Главная</a></li> <li data-v-3c62aeab><a href=\"/catalog\" data-v-3c62aeab>Каталог</a></li> <li data-v-3c62aeab><a href=\"/about\" data-v-3c62aeab>О нас</a></li> <li data-v-3c62aeab><a href=\"/certificates\" data-v-3c62aeab>Сертификаты</a></li> <li data-v-3c62aeab><a href=\"/contact\" data-v-3c62aeab>Контакты</a></li></ul></div></div></div> <hr data-v-3c62aeab> <div class=\"d-none d-lg-block\" data-v-3c62aeab><div class=\"row \" data-v-3c62aeab><div class=\"col-lg-9\" data-v-3c62aeab><div class=\"footer_title\" data-v-3c62aeab>Реквизиты</div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab>Юр.адрес/почтовый адрес: 220007,  г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17 </p></div></div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab>Счет: BY20ALFA30122474210010270000\n            в ЗАО &quot;АЛЬФА-БАНК&quot; г. Минск, ул. Сурганова, 43-47</p></div></div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab>Директор Михашонок Сергей Васильевич, на основании Устава\n              Приказ № 8-К от 19.02.2020г.\n          </p></div></div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab><a href=\"/docs/Реквизиты_МиксЭнерджи.docx\" target=\"_blank\" data-v-3c62aeab>Скачать реквизиты</a></p></div></div></div> <div class=\"col\" data-v-3c62aeab><div class=\"footer_title\" style=\"color: #1e2f4c;\" data-v-3c62aeab>--</div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab>УНП:193243351</p></div></div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab>БИК: ALFABY2X</p></div></div> <div class=\"row\" data-v-3c62aeab><div class=\" col-lg-12 footer_contact_text\" data-v-3c62aeab><p data-v-3c62aeab><i class=\"fas fa-envelope\" data-v-3c62aeab></i> mixenerdgy@mail.ru </p> <p data-v-3c62aeab><i class=\"fa fa-phone\" data-v-3c62aeab></i> тел/факс:+375173926366 </p> <p data-v-3c62aeab><i class=\"fa fa-phone\" data-v-3c62aeab></i> тел:+37529-377-47-10 </p></div></div></div></div></div></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/global/footer/footer_site.vue?vue&type=template&id=23e6f1d3&scoped=true&
+// CONCATENATED MODULE: ./components/global/footer/footer_site.vue?vue&type=template&id=3c62aeab&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/global/footer/footer_site.vue?vue&type=script&lang=js&
+//
+//
+//
 //
 //
 //
@@ -1831,7 +1823,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "23e6f1d3",
+  "3c62aeab",
   "f23471be"
   
 )
@@ -2432,9 +2424,9 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_8cb549ba_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_8cb549ba_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_8cb549ba_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_8cb549ba_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_8cb549ba_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_98212620_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_98212620_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_98212620_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_98212620_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_top_bar_vue_vue_type_style_index_0_id_98212620_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -2445,7 +2437,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".timework_line[data-v-8cb549ba]{height:100%;width:250px;padding-top:2%}.phones_line[data-v-8cb549ba]{height:auto;width:auto;margin:5px}.list-phones[data-v-8cb549ba]{width:auto}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".timework_line[data-v-98212620]{height:100%;width:250px;padding-top:2%}.phones_line[data-v-98212620]{height:auto;width:auto;margin:5px}.list-phones[data-v-98212620]{width:auto}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2554,14 +2546,17 @@ const mutations = {
     state.count = 0;
 
     for (let x of state.cart) {
-      state.count += x.count;
+      state.count = parseInt(state.count);
+      state.count += x.count - 0;
     }
   },
 
   SET_CART(state, product) {
     let ccc = state.cart.find(function (x) {
+      x.count = parseInt(x.count);
+
       if (x.id === product.id) {
-        x.count += product.count;
+        x.count += product.count - 0;
         return x;
       }
     });
@@ -2573,7 +2568,8 @@ const mutations = {
     state.count = 0;
 
     for (let x of state.cart) {
-      state.count += x.count;
+      state.count = parseInt(state.count);
+      state.count += x.count - 0;
     }
   },
 
@@ -2582,14 +2578,14 @@ const mutations = {
       if (x.id === product_id) {
         x.count = x.count - 0;
         x.count -= 1;
-        x.count = x.count < 0 ? 0 : x.count;
+        x.count = x.count < 0 ? 0 : x.count - 0;
         return x;
       }
     });
     state.count = 0;
 
     for (let x of state.cart) {
-      state.count += x.count;
+      state.count += x.count - 0;
     }
   },
 
@@ -2598,14 +2594,15 @@ const mutations = {
       if (x.id === product_id) {
         x.count = x.count - 0;
         x.count += 1;
-        x.count = x.count < 0 ? 0 : x.count;
+        x.count = x.count < 0 ? 0 : x.count - 0;
         return x;
       }
     });
     state.count = 0;
 
     for (let x of state.cart) {
-      state.count += x.count;
+      state.count = parseInt(state.count);
+      state.count += x.count - 0;
     }
   },
 
@@ -2622,14 +2619,15 @@ const mutations = {
       if (x.id === product_id) {
         x.count = x.count - 0;
         x.count = value;
-        x.count = x.count < 0 ? 0 : x.count;
+        x.count = x.count < 0 ? 0 : x.count - 0;
         return x;
       }
     });
     state.count = 0;
 
     for (let x of state.cart) {
-      state.count += x.count;
+      state.count = parseInt(state.count);
+      state.count += x.count - 0;
     }
   }
 

@@ -110,6 +110,11 @@ export default {
         this.show = true;
       let data = await this.$axios.get(`/cat/characterisitcs?category=${this.$route.params.id}`)
         this.filters = data.data;
+      this.filters.sort(function(a, b){
+            if(a.name < b.name) { return -1; }
+            if(a.name > b.name) { return 1; }
+            return 0;
+        })
       this.all_filters = []
       for(let i of this.filters){
         for(let j of i.values){

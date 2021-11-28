@@ -110,13 +110,8 @@ export default {
       }
     },
     async getCategories(){
-        let data = await this.$axios.get('/catalog/categories/');
+        let data = await this.$axios.get('/catalog/categories/?ordering=-weight_in_menu');
         this.menu = data.data.results;
-        this.menu.sort(function(a, b){
-            if(a.name < b.name) { return -1; }
-            if(a.name > b.name) { return 1; }
-            return 0;
-        })
         this.$forceUpdate()
     },
   },

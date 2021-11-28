@@ -257,12 +257,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/certificates.vue?vue&type=template&id=cde231aa&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_vm._ssrNode("<div class=\"row\" style=\"padding-top:30px; \" data-v-cde231aa>","</div>",[_c('el-breadcrumb',{attrs:{"separator-class":"el-icon-arrow-right"}},[_c('el-breadcrumb-item',{attrs:{"to":{ path: '/' }}},[_vm._v("Главная")]),_vm._v(" "),_c('el-breadcrumb-item',[_vm._v("Сертификаты")])],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"row\" style=\"padding-top:30px; \" data-v-cde231aa>","</div>",[_vm._ssrNode("<div class=\"col-3\" data-v-cde231aa>","</div>",[_c('cert-filter')],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"col\" data-v-cde231aa>","</div>",[_vm._ssrNode("<div class=\"row\" data-v-cde231aa>","</div>",_vm._l((_vm.certificates),function(c,k){return _vm._ssrNode("<div class=\"col-6\" style=\" margin:0; height: 100%;\" data-v-cde231aa>","</div>",[_vm._ssrNode("<a target=\"_blank\""+(_vm._ssrAttr("href",c.doc))+" data-v-cde231aa>","</a>",[_c('b-card',{staticClass:"cardCert",staticStyle:{"margin":"5%"}},[_c('b-card-title',{staticStyle:{"font-size":"20px","min-height":"50px"}},[_vm._v(_vm._s(c.name))]),_vm._v(" "),_c('b-card-text',{staticStyle:{"overflow":"auto"}},[_c('object',{attrs:{"trusted":"yes","data":((c.doc) + "#view=FitH&scrollbar=0&toolbar=0&navpanes=0"),"height":"200","type":"application/pdf"}},[_c('p',[_vm._v("Не удалось загрузить документ.")])])])],1)],1)])}),0)])],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"paginator\" data-v-cde231aa>","</div>",[_c('b-pagination',{attrs:{"total-rows":_vm.count,"per-page":_vm.limit,"align":"center","first-number":"","last-number":""},on:{"input":function($event){return _vm.paginate()}},model:{value:(_vm.currentPage),callback:function ($$v) {_vm.currentPage=$$v},expression:"currentPage"}})],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/certificates.vue?vue&type=template&id=1b5ae0de&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_vm._ssrNode("<div class=\"row\" style=\"padding-top:30px; \" data-v-1b5ae0de>","</div>",[_c('el-breadcrumb',{attrs:{"separator-class":"el-icon-arrow-right"}},[_c('el-breadcrumb-item',{attrs:{"to":{ path: '/' }}},[_vm._v("Главная")]),_vm._v(" "),_c('el-breadcrumb-item',[_vm._v("Сертификаты")])],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"row\" style=\"padding-top:30px; \" data-v-1b5ae0de>","</div>",[_vm._ssrNode("<div class=\"col-3\" data-v-1b5ae0de>","</div>",[_c('cert-filter')],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"col\" data-v-1b5ae0de>","</div>",[_vm._ssrNode("<div class=\"row\" data-v-1b5ae0de>","</div>",_vm._l((_vm.certificates),function(c,k){return _vm._ssrNode("<div class=\"col-6\" style=\" margin:0; height: 100%;\" data-v-1b5ae0de>","</div>",[_vm._ssrNode("<a target=\"_blank\""+(_vm._ssrAttr("href",c.doc))+" data-v-1b5ae0de>","</a>",[_c('b-card',{staticClass:"cardCert",staticStyle:{"margin":"5%"}},[_c('b-card-title',{staticStyle:{"font-size":"20px","min-height":"50px"}},[_vm._v(_vm._s(c.name))]),_vm._v(" "),_c('b-card-text',{staticStyle:{"overflow":"auto"}})],1)],1)])}),0)])],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"paginator\" data-v-1b5ae0de>","</div>",[_c('b-pagination',{attrs:{"total-rows":_vm.count,"per-page":_vm.limit,"align":"center","first-number":"","last-number":""},on:{"input":function($event){return _vm.paginate()}},model:{value:(_vm.currentPage),callback:function ($$v) {_vm.currentPage=$$v},expression:"currentPage"}})],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/certificates.vue?vue&type=template&id=cde231aa&scoped=true&
+// CONCATENATED MODULE: ./pages/certificates.vue?vue&type=template&id=1b5ae0de&scoped=true&
 
 // EXTERNAL MODULE: ./components/certComponents/certificateCard.vue + 4 modules
 var certificateCard = __webpack_require__(123);
@@ -422,7 +422,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "cde231aa",
+  "1b5ae0de",
   "aae9f190"
   
 )

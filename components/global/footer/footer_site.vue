@@ -6,13 +6,16 @@
 				<div class="col-lg-5 footer_col">
 					<div class="footer_column footer_contact">
 						<div class="logo_container">
-							<div class="logo"><a href="#">ООО "Миксэнерджи" &trade;</a></div>
+							<div class="logo"><a href="#">ООО "МиксЭнерджи" &trade;</a></div>
 						</div>
 						<div class="footer_title">Остались вопросы? Позвоните нам!</div>
             <div class="footer_phone"><a href="tel:+375173926366">+375173926366</a></div>
 						<div class="footer_contact_text">
 							<p>ул. Артиллеристов, дом № 8, корпус 3, офис 17</p>
 							<p>г. Минск, Республика Беларусь</p>
+              <p>Сайт catalog.mixenerdgy.by не является интернет-магазином.</p>
+              <p>На сайте представлен только ассортимент наших товаров.</p>
+              <p>На нем отсутствует  возможность заказа online и оплаты за товар дистанционным путем.</p>
 						</div>
 <!--						<div class="footer_social">-->
 <!--							<ul>-->

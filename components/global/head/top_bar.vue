@@ -5,7 +5,7 @@
 				<div class="row">
 					<div class="col d-flex flex-row">
 						<div class="top_bar_contact_item">
-              <div class="top_bar_icon"><img src="/images/phone.png" alt=""></div>
+              <div class="top_bar_icon"><i class="fa fa-phone"></i></div>
 
               <div class="top_bar_menu">
 								<ul class="standard_dropdown top_bar_dropdown">
@@ -19,7 +19,7 @@
                          </span>
 
                        <span class="phones_line">
-                           <i class="fa fa-phone"></i>
+                           <img src="/images/phone.png" alt="">
                             <a style="display: inline-block; margin-left: 5px;" href="tel:+375293774710">+375293774710</a>
                          </span>
 
@@ -35,7 +35,7 @@
 						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/mail.png" alt=""></div><a href="mailto:mixenerdgy@gmail.com">mixenerdgy@mail.ru</a></div>
 						<div class="top_bar_content ml-auto">
 							<div class="top_bar_menu">
-								<ul class="standard_dropdown top_bar_dropdown">
+								<ul class="standard_dropdown top_bar_dropdown" style="text-align: center;">
 									<li>
 										<span><i class="far fa-clock"></i><a style="display: inline-block; margin-left: 5px;" href="#">8.30-17.30<i class="fas fa-chevron-down"></i></a></span>
 										<ul>

@@ -12,7 +12,7 @@
           <h4 style="font-size: 28px; color: #0d82d3; padding: 10px;">Реквизиты: </h4><br>
         </div>
         <div class="row">
-             <h4 class="text-recivitor">Название: ООО "Миксэнерджи"</h4>
+             <h4 class="text-recivitor">Наименование: ООО "Миксэнерджи"</h4>
           </div>
         <div class="row">
              <h4  class="text-recivitor">Юр.адрес/почтовый адрес: 220007, г.Минск, ул. Артиллеристов, дом № 8, корпус 3, офис 17</h4>
@@ -24,7 +24,7 @@
           <h4 class="text-recivitor">Счет: BY20ALFA30122474210010270000</h4>
         </div>
         <div class="row">
-          <h4 class="text-recivitor">в ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</h4>
+          <h4 class="text-recivitor">Банк: ЗАО "АЛЬФА-БАНК" г. Минск, ул. Сурганова, 43-47</h4>
         </div>
         <div class="row">
           <h4 class="text-recivitor">БИК: ALFABY2X</h4>

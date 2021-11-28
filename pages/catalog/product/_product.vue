@@ -38,10 +38,9 @@
         <div class="col-5" style="font-size: 12px; text-align: center; display: table-cell; vertical-align: middle;">
            <b-button @click="addToCart" variant="outline-primary" size="sm" >
             <div class="row" style="white-space: pre-line; text-align: center; font-size: 14px; font-weight: 500;">
-              <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">Добавить в  корзину</div>
+              <div class="col" style="display: table-cell; vertical-align: middle;margin-top: 1%;">{{in_cart?'Добавлено':'Добавить в корзину'}}</div>
             </div>
           </b-button>
-          {{in_cart?'В корзине':''}}
         </div>
       </div>
       <b-row style="padding: 2%; margin-top: 10%; text-align: left;">
@@ -49,9 +48,9 @@
       </b-row>
       <b-row v-if="product.characteristic_show">
         <span class="units-show">{{product.characteristic_show}}: </span>
-          <span class="units-show" v-for="(i,k) in others" :key="k">
-            <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!=i.id">{{i.value_char_show}} {{i.unit_shows}}</nuxt-link>
-            <span v-else>{{i.value_char_show}} {{i.unit_shows}}</span>
+          <span class="units-shows" v-for="(i,k) in others" :key="k">
+            <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!=i.id"><span>{{i.value_char_show}} {{i.unit_shows}}</span></nuxt-link>
+            <span v-else >{{i.value_char_show}} {{i.unit_shows}}</span>
           </span>
       </b-row>
     </b-col>
@@ -76,7 +75,7 @@ export default {
       fields:[
           {key: 'characterisitc.name', label: 'Название'},
           {key: 'value', label: 'Значение'},
-          {key: 'unit', label: 'ед. измерения'},
+          {key: 'unit', label: 'Ед. измерения'},
       ],
        count:0,
       in_cart:false,
@@ -126,7 +125,6 @@ export default {
     this.cats = cats.data;
     },
      addToCart(){
-       console.log(this.product)
         let cart = {count:this.count, product:this.product, id:this.product.id}
         this.ADD_TO_CART(cart);
         this.count = 0;
@@ -172,6 +170,12 @@ export default {
   display: none;
 }
 .units-show{
-  padding: 2%;
+  padding: 1%;
+  margin: 1%;
+}
+.units-shows{
+  padding: 1%;
+  margin: 1%;
+  border: #0d82d3 solid;
 }
 </style>
