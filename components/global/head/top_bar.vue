@@ -38,14 +38,26 @@
 								<ul class="standard_dropdown top_bar_dropdown" style="text-align: center;">
 									<li>
 										<span><i class="far fa-clock"></i><a style="display: inline-block; margin-left: 5px;" href="#">8.30-17.30<i class="fas fa-chevron-down"></i></a></span>
-										<ul>
-											<li class="timework_line">Понедельник  - с 8.30 до 17.30</li>
-											<li class="timework_line">Вторник  - с 8.30 до 17.30</li>
-											<li class="timework_line">Среда  - с 8.30 до 17.30</li>
-											<li class="timework_line">Четверг  - с 8.30 до 17.30</li>
-											<li class="timework_line">Пятница  - с 8.30 до 17.30</li>
-											<li class="timework_line">Суббота  -  Выходной</li>
-											<li class="timework_line">Воскресенье  -  Выходной</li>
+										<ul style="left:-100px;">
+                      <b-table style="width: 250px;" striped hover :items="[
+                        {name:'Понедельник', value: 'с 8.30 до 17.30'},
+                        {name:'Вторник', value: 'с 8.30 до 17.30'},
+                        {name:'Среда', value: 'с 8.30 до 17.30'},
+                        {name:'Четверг', value: 'с 8.30 до 17.30'},
+                        {name:'Пятница', value: 'с 8.30 до 17.30'},
+                        {name:'Суббота', value: 'Выходной'},
+                        {name:'Воскресенье', value: 'Выходной'},
+                        ]" :fields="[
+                          {key: 'name', label: 'День недели'},
+                          {key: 'value', label: 'Время работы'},
+                        ]"></b-table>
+<!--											<li class="timework_line">Понедельник  - с 8.30 до 17.30</li>-->
+<!--											<li class="timework_line">Вторник  - с 8.30 до 17.30</li>-->
+<!--											<li class="timework_line">Среда  - с 8.30 до 17.30</li>-->
+<!--											<li class="timework_line">Четверг  - с 8.30 до 17.30</li>-->
+<!--											<li class="timework_line">Пятница  - с 8.30 до 17.30</li>-->
+<!--											<li class="timework_line">Суббота  -  Выходной</li>-->
+<!--											<li class="timework_line">Воскресенье  -  Выходной</li>-->
 										</ul>
 									</li>
 								</ul>

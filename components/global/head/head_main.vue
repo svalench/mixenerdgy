@@ -23,7 +23,7 @@
                       v-model="visible"
                        trigger="manual"
                       >
-                      <el-input type="search" @blur="visible=false" @focus="showSearch" v-model="search" slot="reference" class="header_search_input" style="height: 50px;" placeholder="Введите название или артикул..."></el-input>
+                      <el-input type="search" v-on:keyup.native.enter="goToSearch" @blur="visible=false" @focus="showSearch" v-model="search" slot="reference" class="header_search_input" style="height: 50px;" placeholder="Введите название или артикул..."></el-input>
                     <div style="overflow: auto; height: 50vh;">
                        <b-skeleton-wrapper :loading="show">
                         <template #loading>
@@ -114,6 +114,7 @@ export default {
   },
   methods:{
     goToSearch(){
+      console.log(this.search)
       this.$router.push(`/search?search=${this.search}`)
     },
     showSearch(){

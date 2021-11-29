@@ -91,8 +91,6 @@ export default {
           left: 0,
           behavior: 'smooth'
         })
-
-        this.moveToDown = !this.moveToDown
       },
     paginate(){
       this.$router.push({ path: this.$route.path,

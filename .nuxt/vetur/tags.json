@@ -26,6 +26,12 @@
   "HeadTopBar": {
     "description": "Auto imported from components/global/head/top_bar.vue"
   },
+  "CertFilter": {
+    "description": "Auto imported from components/certComponents/certFilter.vue"
+  },
+  "CertComponentsCertificateCard": {
+    "description": "Auto imported from components/certComponents/certificateCard.vue"
+  },
   "CatalogCard": {
     "description": "Auto imported from components/catalog/catalog_card.vue"
   },
@@ -37,12 +43,6 @@
   },
   "CatalogTabsProduct": {
     "description": "Auto imported from components/catalog/tabs_product.vue"
-  },
-  "CertFilter": {
-    "description": "Auto imported from components/certComponents/certFilter.vue"
-  },
-  "CertComponentsCertificateCard": {
-    "description": "Auto imported from components/certComponents/certificateCard.vue"
   },
   "IndexBannerIndex": {
     "description": "Auto imported from components/index/banner_index.vue"

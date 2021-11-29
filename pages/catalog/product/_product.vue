@@ -48,9 +48,9 @@
       </b-row>
       <b-row v-if="product.characteristic_show">
         <span class="units-show">{{product.characteristic_show}}: </span>
-          <span class="units-shows" v-for="(i,k) in others" :key="k">
-            <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!=i.id"><span>{{i.value_char_show}} {{i.unit_shows}}</span></nuxt-link>
-            <span v-else >{{i.value_char_show}} {{i.unit_shows}}</span>
+          <span :class="product.id===i.id?'revers units-shows':'units-shows'" v-for="(i,k) in others" :key="k">
+            <nuxt-link :to="`/catalog/product/${i.id}`" v-if="product.id!==i.id"><span>{{i.value_char_show}} {{i.unit_shows!=='-'?i.unit_shows:''}}</span></nuxt-link>
+            <span v-else >{{i.value_char_show}} {{i.unit_shows!=='-'?i.unit_shows:''}}</span>
           </span>
       </b-row>
     </b-col>
@@ -119,6 +119,11 @@ export default {
       this.others = other.data.child;
       this.othersCount = 0;
       this.fortabs = [];
+      this.product.characteristics_norm.sort(function(a, b){
+            if(a.characterisitc.name < b.characterisitc.name) { return -1; }
+            if(a.characterisitc.name > b.characterisitc.name) { return 1; }
+            return 0;
+        })
       this.fortabs.push({name: 'Характеристики', data: this.product.characteristics_norm})
       this.fortabs.push({name: 'Описание', data: this.product.card!==undefined?this.product.card.description:'нет описания'})
       let cats = await this.$axios.get(`/catalog/categories/second/${this.product.card.category}/`);
@@ -177,5 +182,9 @@ export default {
   padding: 1%;
   margin: 1%;
   border: #0d82d3 solid;
+}
+.revers{
+  background-color: #0e8ce4;
+  color: white;
 }
 </style>

@@ -184,7 +184,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 123:
+/***/ 124:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -250,7 +250,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 143:
+/***/ 146:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -265,7 +265,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/certificates.vue?vue&type=template&id=1b5ae0de&scoped=true&
 
 // EXTERNAL MODULE: ./components/certComponents/certificateCard.vue + 4 modules
-var certificateCard = __webpack_require__(123);
+var certificateCard = __webpack_require__(124);
 
 // EXTERNAL MODULE: ./components/certComponents/certFilter.vue + 4 modules
 var certFilter = __webpack_require__(116);
