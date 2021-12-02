@@ -3720,7 +3720,7 @@ body{
   overflow-x: hidden;
 }
 .page1{
-  margin-top: 28vh;
+  margin-top: 200px;
   z-index: 1;
   min-height: 80vh;
   position: relative;

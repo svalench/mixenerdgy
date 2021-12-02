@@ -92,7 +92,7 @@ export default {
         search +=`&search=${this.search}`;
       }
       this.offset = (this.currentPage-1)*this.limit;
-      let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${search}`);
+      let data = await this.$axios.get(`/product/product/?limit=${this.limit}&offset=${this.offset}${search}&ordering=id`);
       this.count = data.data.count;
       this.products = data.data.results;
       this.show = false;

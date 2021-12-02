@@ -130,7 +130,7 @@ export default {
     },
     async searchProducts(){
       this.show = true;
-      let data = await this.$axios.get(`/product/product/?limit=10&search=${this.search}`);
+      let data = await this.$axios.get(`/product/product/?limit=10&search=${this.search}&ordering=id`);
       this.count = data.data.count
       this.products = data.data.results;
       this.show = false;

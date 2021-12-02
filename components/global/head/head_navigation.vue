@@ -14,13 +14,19 @@
 									<div class="cat_menu_text">категории</div>
 								</div>
 
-								<ul class="cat_menu">
-									<li class="hassubs" v-for="(i,k) in menu"  :key="k">
+								<ul class="cat_menu" ref="catmenu">
+
+									<li class="hassubs" v-for="(i,k) in menu"  :key="k"
+                      @mouseover="vis_cat='visible'"
+                    @mouseleave="vis_cat='hidden'"
+                  >
 										<a href="#">{{i.name}}<i class="fas fa-chevron-right"></i></a>
-										<ul>
+										<ul class="bockmenu" :style="{ visibility: vis_cat}">
                       <div class="row">
-                        <div class="col-6" v-for="(j,k) in i.child" :key="k">
-                          <nuxt-link :to="`/catalog/${j.id}`"><b-row><b-col cols="3"><b-img :src="j.img" fluid></b-img></b-col>
+                        <div class="col-6 catlink"  v-for="(j,k) in i.child" :key="k"
+                        >
+
+                          <nuxt-link :to="`/catalog/${j.id}`"><b-row @click="goToCat(j)"><b-col cols="3"><b-img :src="j.img" fluid></b-img></b-col>
                         <b-col>{{j.name}}</b-col>
                       </b-row></nuxt-link>
 										  </div>
@@ -74,6 +80,7 @@ export default {
   data(){
     return{
       menu:[],
+      vis_cat:'hidden',
     }
   },
   watch:{
@@ -81,8 +88,10 @@ export default {
       var menu = this.$refs.menu;
       if(nv==='/'){
         menu.classList.remove('hidemenu')
+        this.vis_cat = '';
       }else{
         menu.classList.add('hidemenu')
+        this.vis_cat = '';
       }
     }
   },
@@ -99,6 +108,9 @@ export default {
        window.addEventListener("scroll", this.onScroll)
   },
   methods:{
+    goToCat(j) {
+      this.vis_cat = 'hidden';
+    },
     onScroll(e) {
       if(this.$route.path==='/') {
         var menu = this.$refs.menu;

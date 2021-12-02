@@ -28,7 +28,7 @@
           </b-col>
           <b-col>
             <b-row>
-              <b-col><b-card-title>{{c.product.name}}</b-card-title></b-col>
+              <b-col><b-card-title style="color: #0e8ce4; cursor: pointer;" @click="goto(c)">{{c.product.name}}</b-card-title></b-col>
             </b-row>
           </b-col>
         </b-row>
@@ -133,6 +133,10 @@ export default {
     }
   },
   methods:{
+    goto(c){
+      this.$bvModal.hide('modal-xl');
+      this.$router.push(`/catalog/product/${c.id}/`);
+    },
     ...mapActions({
            CLEAR_CART: 'cart/CLEAR_CART'
         }),

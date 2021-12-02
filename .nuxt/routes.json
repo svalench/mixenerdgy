@@ -3,48 +3,56 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_afb9a4b2"
   },
   {
     "name": "catalog",
     "path": "/catalog",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\catalog\\\\index.vue",
-    "chunkName": "pages/catalog/index"
+    "chunkName": "pages/catalog/index",
+    "_name": "_6b07896f"
   },
   {
     "name": "certificates",
     "path": "/certificates",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\certificates.vue",
-    "chunkName": "pages/certificates"
+    "chunkName": "pages/certificates",
+    "_name": "_6103cbdc"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_2e8b343a"
   },
   {
     "name": "search",
     "path": "/search",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\search.vue",
-    "chunkName": "pages/search"
+    "chunkName": "pages/search",
+    "_name": "_41764304"
   },
   {
     "name": "catalog-product-product",
     "path": "/catalog/product/:product?",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\catalog\\\\product\\\\_product.vue",
-    "chunkName": "pages/catalog/product/_product"
+    "chunkName": "pages/catalog/product/_product",
+    "_name": "_6f14c008"
   },
   {
     "name": "catalog-id",
     "path": "/catalog/:id",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\catalog\\\\_id.vue",
-    "chunkName": "pages/catalog/_id"
+    "chunkName": "pages/catalog/_id",
+    "_name": "_7c771b97"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\алексадр\\\\PycharmProjects\\\\mixenerdgy\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_7049ef28"
   }
 ]
