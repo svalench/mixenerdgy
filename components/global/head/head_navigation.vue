@@ -17,16 +17,14 @@
 								<ul class="cat_menu" ref="catmenu">
 
 									<li class="hassubs" v-for="(i,k) in menu"  :key="k"
-                      @mouseover="vis_cat='visible'"
-                    @mouseleave="vis_cat='hidden'"
                   >
 										<a href="#">{{i.name}}<i class="fas fa-chevron-right"></i></a>
-										<ul class="bockmenu" :style="{ visibility: vis_cat}">
+										<ul>
                       <div class="row">
                         <div class="col-6 catlink"  v-for="(j,k) in i.child" :key="k"
                         >
 
-                          <nuxt-link :to="`/catalog/${j.id}`"><b-row @click="goToCat(j)"><b-col cols="3"><b-img :src="j.img" fluid></b-img></b-col>
+                          <nuxt-link :to="`/catalog/${j.id}`"><b-row @click="goToCat(j)"><b-col cols="3"><b-img style="width: 80%;" :src="j.img" fluid></b-img></b-col>
                         <b-col>{{j.name}}</b-col>
                       </b-row></nuxt-link>
 										  </div>
