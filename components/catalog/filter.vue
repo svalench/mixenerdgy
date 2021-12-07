@@ -40,7 +40,9 @@
               name="flavour-1"
             >
               <b-row v-for="(val,nn) in f.values" :key="nn">
-              <b-form-checkbox  size="lg" ref="checkb" @change="setFilter()" :value="val.id" >{{val.value}} {{val.unit!=='-'?val.unit:''}}</b-form-checkbox>
+              <b-form-checkbox  size="lg" ref="checkb" v-if="nomber_show>nn" @change="setFilter()" :value="val.id" >
+                {{val.value}} {{val.unit!=='-'?val.unit:''}}
+              </b-form-checkbox>
               </b-row>
             </b-form-checkbox-group>
           </b-card-text>
@@ -65,6 +67,7 @@ export default {
       selected:[],
       all_filters:[],
       selected_filters:[],
+      nomber_show: 5,
       options:[
         { text: 'Orange', value: 'orange' },
         { text: 'Orange', value: 'orange' },
