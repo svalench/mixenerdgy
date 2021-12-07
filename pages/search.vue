@@ -99,7 +99,7 @@ export default {
     },
     paginate(){
       this.$router.push({ path: this.$route.path,
-        query: { page: this.currentPage, filter: this.$route.query.filter?this.$route.query.filter:[] }})
+        query: { page: this.currentPage, search: this.$route.query.search?this.$route.query.search:'' }})
       this.getRes()
       this.moveTo()
     },

@@ -11,9 +11,9 @@ export const CatalogCard = () => import('../..\\components\\catalog\\catalog_car
 export const CatalogFilter = () => import('../..\\components\\catalog\\filter.vue' /* webpackChunkName: "components/catalog-filter" */).then(c => wrapFunctional(c.default || c))
 export const CatalogGaleryProduct = () => import('../..\\components\\catalog\\GaleryProduct.vue' /* webpackChunkName: "components/catalog-galery-product" */).then(c => wrapFunctional(c.default || c))
 export const CatalogTabsProduct = () => import('../..\\components\\catalog\\tabs_product.vue' /* webpackChunkName: "components/catalog-tabs-product" */).then(c => wrapFunctional(c.default || c))
+export const IndexBannerIndex = () => import('../..\\components\\index\\banner_index.vue' /* webpackChunkName: "components/index-banner-index" */).then(c => wrapFunctional(c.default || c))
 export const CertFilter = () => import('../..\\components\\certComponents\\certFilter.vue' /* webpackChunkName: "components/cert-filter" */).then(c => wrapFunctional(c.default || c))
 export const CertComponentsCertificateCard = () => import('../..\\components\\certComponents\\certificateCard.vue' /* webpackChunkName: "components/cert-components-certificate-card" */).then(c => wrapFunctional(c.default || c))
-export const IndexBannerIndex = () => import('../..\\components\\index\\banner_index.vue' /* webpackChunkName: "components/index-banner-index" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
