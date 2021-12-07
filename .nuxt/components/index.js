@@ -1,19 +1,19 @@
-export { default as FooterSite } from '../..\\components\\global\\footer\\footer_site.vue'
-export { default as HeadCartComponentHeader } from '../..\\components\\global\\head\\CartComponentHeader.vue'
-export { default as HeadCartDialog } from '../..\\components\\global\\head\\CartDialog.vue'
-export { default as HeadHeaderSite } from '../..\\components\\global\\head\\header_site.vue'
-export { default as HeadMain } from '../..\\components\\global\\head\\head_main.vue'
-export { default as HeadNavigation } from '../..\\components\\global\\head\\head_navigation.vue'
-export { default as HeadMobileHeader } from '../..\\components\\global\\head\\mobileHeader.vue'
-export { default as HeadPhoenMenu } from '../..\\components\\global\\head\\phoen_menu.vue'
-export { default as HeadTopBar } from '../..\\components\\global\\head\\top_bar.vue'
-export { default as CatalogCard } from '../..\\components\\catalog\\catalog_card.vue'
-export { default as CatalogFilter } from '../..\\components\\catalog\\filter.vue'
-export { default as CatalogGaleryProduct } from '../..\\components\\catalog\\GaleryProduct.vue'
-export { default as CatalogTabsProduct } from '../..\\components\\catalog\\tabs_product.vue'
-export { default as CertFilter } from '../..\\components\\certComponents\\certFilter.vue'
-export { default as CertComponentsCertificateCard } from '../..\\components\\certComponents\\certificateCard.vue'
-export { default as IndexBannerIndex } from '../..\\components\\index\\banner_index.vue'
+export const FooterSite = () => import('../..\\components\\global\\footer\\footer_site.vue' /* webpackChunkName: "components/footer-site" */).then(c => wrapFunctional(c.default || c))
+export const HeadCartComponentHeader = () => import('../..\\components\\global\\head\\CartComponentHeader.vue' /* webpackChunkName: "components/head-cart-component-header" */).then(c => wrapFunctional(c.default || c))
+export const HeadCartDialog = () => import('../..\\components\\global\\head\\CartDialog.vue' /* webpackChunkName: "components/head-cart-dialog" */).then(c => wrapFunctional(c.default || c))
+export const HeadHeaderSite = () => import('../..\\components\\global\\head\\header_site.vue' /* webpackChunkName: "components/head-header-site" */).then(c => wrapFunctional(c.default || c))
+export const HeadMain = () => import('../..\\components\\global\\head\\head_main.vue' /* webpackChunkName: "components/head-main" */).then(c => wrapFunctional(c.default || c))
+export const HeadNavigation = () => import('../..\\components\\global\\head\\head_navigation.vue' /* webpackChunkName: "components/head-navigation" */).then(c => wrapFunctional(c.default || c))
+export const HeadMobileHeader = () => import('../..\\components\\global\\head\\mobileHeader.vue' /* webpackChunkName: "components/head-mobile-header" */).then(c => wrapFunctional(c.default || c))
+export const HeadPhoenMenu = () => import('../..\\components\\global\\head\\phoen_menu.vue' /* webpackChunkName: "components/head-phoen-menu" */).then(c => wrapFunctional(c.default || c))
+export const HeadTopBar = () => import('../..\\components\\global\\head\\top_bar.vue' /* webpackChunkName: "components/head-top-bar" */).then(c => wrapFunctional(c.default || c))
+export const CatalogCard = () => import('../..\\components\\catalog\\catalog_card.vue' /* webpackChunkName: "components/catalog-card" */).then(c => wrapFunctional(c.default || c))
+export const CatalogFilter = () => import('../..\\components\\catalog\\filter.vue' /* webpackChunkName: "components/catalog-filter" */).then(c => wrapFunctional(c.default || c))
+export const CatalogGaleryProduct = () => import('../..\\components\\catalog\\GaleryProduct.vue' /* webpackChunkName: "components/catalog-galery-product" */).then(c => wrapFunctional(c.default || c))
+export const CatalogTabsProduct = () => import('../..\\components\\catalog\\tabs_product.vue' /* webpackChunkName: "components/catalog-tabs-product" */).then(c => wrapFunctional(c.default || c))
+export const CertFilter = () => import('../..\\components\\certComponents\\certFilter.vue' /* webpackChunkName: "components/cert-filter" */).then(c => wrapFunctional(c.default || c))
+export const CertComponentsCertificateCard = () => import('../..\\components\\certComponents\\certificateCard.vue' /* webpackChunkName: "components/cert-components-certificate-card" */).then(c => wrapFunctional(c.default || c))
+export const IndexBannerIndex = () => import('../..\\components\\index\\banner_index.vue' /* webpackChunkName: "components/index-banner-index" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

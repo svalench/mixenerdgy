@@ -1,0 +1,41 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/catalog-card.js": "components/catalog-card.js",
+    "components/catalog-filter.js": "components/catalog-filter.js",
+    "components/catalog-galery-product.js": "components/catalog-galery-product.js",
+    "components/catalog-tabs-product.js": "components/catalog-tabs-product.js",
+    "components/cert-components-certificate-card.js": "components/cert-components-certificate-card.js",
+    "components/cert-filter.js": "components/cert-filter.js",
+    "components/head-cart-dialog.js": "components/head-cart-dialog.js",
+    "components/index-banner-index.js": "components/index-banner-index.js",
+    "pages/about.js": "pages/about.js",
+    "pages/catalog/_id.js": "pages/catalog/_id.js",
+    "pages/catalog/index.js": "pages/catalog/index.js",
+    "pages/catalog/product/_product.js": "pages/catalog/product/_product.js",
+    "pages/certificates.js": "pages/certificates.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/index.js": "pages/index.js",
+    "pages/search.js": "pages/search.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/catalog-card.js": "components/catalog-card.js.map",
+    "components/catalog-filter.js": "components/catalog-filter.js.map",
+    "components/catalog-galery-product.js": "components/catalog-galery-product.js.map",
+    "components/catalog-tabs-product.js": "components/catalog-tabs-product.js.map",
+    "components/cert-components-certificate-card.js": "components/cert-components-certificate-card.js.map",
+    "components/cert-filter.js": "components/cert-filter.js.map",
+    "components/head-cart-dialog.js": "components/head-cart-dialog.js.map",
+    "components/index-banner-index.js": "components/index-banner-index.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/catalog/_id.js": "pages/catalog/_id.js.map",
+    "pages/catalog/index.js": "pages/catalog/index.js.map",
+    "pages/catalog/product/_product.js": "pages/catalog/product/_product.js.map",
+    "pages/certificates.js": "pages/certificates.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/search.js": "pages/search.js.map",
+    "server.js": "server.js.map"
+  }
+}
