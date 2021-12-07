@@ -38,13 +38,13 @@
   "CatalogTabsProduct": {
     "description": "Auto imported from components/catalog/tabs_product.vue"
   },
+  "IndexBannerIndex": {
+    "description": "Auto imported from components/index/banner_index.vue"
+  },
   "CertFilter": {
     "description": "Auto imported from components/certComponents/certFilter.vue"
   },
   "CertComponentsCertificateCard": {
     "description": "Auto imported from components/certComponents/certificateCard.vue"
-  },
-  "IndexBannerIndex": {
-    "description": "Auto imported from components/index/banner_index.vue"
   }
 }

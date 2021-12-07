@@ -19,6 +19,6 @@ You can directly use them in pages and other components without the need to impo
 - `<CatalogFilter>` | `<catalog-filter>` (components/catalog/filter.vue)
 - `<CatalogGaleryProduct>` | `<catalog-galery-product>` (components/catalog/GaleryProduct.vue)
 - `<CatalogTabsProduct>` | `<catalog-tabs-product>` (components/catalog/tabs_product.vue)
+- `<IndexBannerIndex>` | `<index-banner-index>` (components/index/banner_index.vue)
 - `<CertFilter>` | `<cert-filter>` (components/certComponents/certFilter.vue)
 - `<CertComponentsCertificateCard>` | `<cert-components-certificate-card>` (components/certComponents/certificateCard.vue)
-- `<IndexBannerIndex>` | `<index-banner-index>` (components/index/banner_index.vue)
