@@ -1,7 +1,4 @@
 {
-  "FooterSite": {
-    "description": "Auto imported from components/global/footer/footer_site.vue"
-  },
   "HeadCartComponentHeader": {
     "description": "Auto imported from components/global/head/CartComponentHeader.vue"
   },
@@ -26,6 +23,9 @@
   "HeadTopBar": {
     "description": "Auto imported from components/global/head/top_bar.vue"
   },
+  "FooterSite": {
+    "description": "Auto imported from components/global/footer/footer_site.vue"
+  },
   "CatalogCard": {
     "description": "Auto imported from components/catalog/catalog_card.vue"
   },
@@ -38,13 +38,13 @@
   "CatalogTabsProduct": {
     "description": "Auto imported from components/catalog/tabs_product.vue"
   },
-  "IndexBannerIndex": {
-    "description": "Auto imported from components/index/banner_index.vue"
-  },
   "CertFilter": {
     "description": "Auto imported from components/certComponents/certFilter.vue"
   },
   "CertComponentsCertificateCard": {
     "description": "Auto imported from components/certComponents/certificateCard.vue"
+  },
+  "IndexBannerIndex": {
+    "description": "Auto imported from components/index/banner_index.vue"
   }
 }

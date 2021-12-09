@@ -39,11 +39,22 @@
               stacked
               name="flavour-1"
             >
+               <div v-show="!nomber_show">
               <b-row v-for="(val,nn) in f.values" :key="nn">
-              <b-form-checkbox  size="lg" ref="checkb" v-if="nomber_show>nn" @change="setFilter()" :value="val.id" >
+              <b-form-checkbox  size="lg" ref="checkb" v-if="5>nn" @change="setFilter()" :value="val.id" >
                 {{val.value}} {{val.unit!=='-'?val.unit:''}}
               </b-form-checkbox>
               </b-row>
+              <b-row @click="nomber_show = true;"  v-if="f.values.length>5" style="cursor: pointer; color: #0e8ce4;">Раскрыть</b-row>
+              </div>
+              <div v-show="nomber_show">
+                <b-row v-for="(val,nn) in f.values" :key="nn">
+                <b-form-checkbox  size="lg" ref="checkb" @change="setFilter()" :value="val.id" >
+                {{val.value}} {{val.unit!=='-'?val.unit:''}}
+              </b-form-checkbox>
+              </b-row>
+              <b-row @click="nomber_show = false" v-if="f.values.length>5" style="cursor: pointer; color: #0e8ce4;">Скрыть</b-row>
+              </div>
             </b-form-checkbox-group>
           </b-card-text>
         </b-card-body>
@@ -67,7 +78,7 @@ export default {
       selected:[],
       all_filters:[],
       selected_filters:[],
-      nomber_show: 5,
+      nomber_show: false,
       options:[
         { text: 'Orange', value: 'orange' },
         { text: 'Orange', value: 'orange' },
@@ -103,6 +114,7 @@ export default {
        * @param n
        */
     openAccordion(n){
+      this.nomber_show = false;
       this.$root.$emit('bv::toggle::collapse', 'accordion-'+n)
     },
       /**

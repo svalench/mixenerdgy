@@ -2707,7 +2707,6 @@ __webpack_require__.r(__webpack_exports__);
 // NAMESPACE OBJECT: ./.nuxt/components/index.js
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
-__webpack_require__.d(components_namespaceObject, "FooterSite", function() { return FooterSite; });
 __webpack_require__.d(components_namespaceObject, "HeadCartComponentHeader", function() { return HeadCartComponentHeader; });
 __webpack_require__.d(components_namespaceObject, "HeadCartDialog", function() { return HeadCartDialog; });
 __webpack_require__.d(components_namespaceObject, "HeadHeaderSite", function() { return HeadHeaderSite; });
@@ -2716,13 +2715,14 @@ __webpack_require__.d(components_namespaceObject, "HeadNavigation", function() {
 __webpack_require__.d(components_namespaceObject, "HeadMobileHeader", function() { return HeadMobileHeader; });
 __webpack_require__.d(components_namespaceObject, "HeadPhoenMenu", function() { return HeadPhoenMenu; });
 __webpack_require__.d(components_namespaceObject, "HeadTopBar", function() { return HeadTopBar; });
+__webpack_require__.d(components_namespaceObject, "FooterSite", function() { return FooterSite; });
 __webpack_require__.d(components_namespaceObject, "CatalogCard", function() { return CatalogCard; });
 __webpack_require__.d(components_namespaceObject, "CatalogFilter", function() { return CatalogFilter; });
 __webpack_require__.d(components_namespaceObject, "CatalogGaleryProduct", function() { return CatalogGaleryProduct; });
 __webpack_require__.d(components_namespaceObject, "CatalogTabsProduct", function() { return CatalogTabsProduct; });
-__webpack_require__.d(components_namespaceObject, "IndexBannerIndex", function() { return IndexBannerIndex; });
 __webpack_require__.d(components_namespaceObject, "CertFilter", function() { return CertFilter; });
 __webpack_require__.d(components_namespaceObject, "CertComponentsCertificateCard", function() { return CertComponentsCertificateCard; });
+__webpack_require__.d(components_namespaceObject, "IndexBannerIndex", function() { return IndexBannerIndex; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -4493,7 +4493,6 @@ function mergeProperty(storeModule, moduleData, property) {
   }
 }
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const FooterSite = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c));
 const HeadCartComponentHeader = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 30)).then(c => wrapFunctional(c.default || c));
 const HeadCartDialog = () => __webpack_require__.e(/* import() | components/head-cart-dialog */ 7).then(__webpack_require__.bind(null, 152)).then(c => wrapFunctional(c.default || c));
 const HeadHeaderSite = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 27)).then(c => wrapFunctional(c.default || c));
@@ -4502,13 +4501,14 @@ const HeadNavigation = () => Promise.resolve(/* import() */).then(__webpack_requ
 const HeadMobileHeader = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c));
 const HeadPhoenMenu = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 32)).then(c => wrapFunctional(c.default || c));
 const HeadTopBar = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 28)).then(c => wrapFunctional(c.default || c));
+const FooterSite = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c));
 const CatalogCard = () => __webpack_require__.e(/* import() | components/catalog-card */ 1).then(__webpack_require__.bind(null, 109)).then(c => wrapFunctional(c.default || c));
 const CatalogFilter = () => __webpack_require__.e(/* import() | components/catalog-filter */ 2).then(__webpack_require__.bind(null, 108)).then(c => wrapFunctional(c.default || c));
 const CatalogGaleryProduct = () => __webpack_require__.e(/* import() | components/catalog-galery-product */ 3).then(__webpack_require__.bind(null, 126)).then(c => wrapFunctional(c.default || c));
 const CatalogTabsProduct = () => __webpack_require__.e(/* import() | components/catalog-tabs-product */ 4).then(__webpack_require__.bind(null, 125)).then(c => wrapFunctional(c.default || c));
-const IndexBannerIndex = () => __webpack_require__.e(/* import() | components/index-banner-index */ 8).then(__webpack_require__.bind(null, 127)).then(c => wrapFunctional(c.default || c));
 const CertFilter = () => __webpack_require__.e(/* import() | components/cert-filter */ 6).then(__webpack_require__.bind(null, 116)).then(c => wrapFunctional(c.default || c));
-const CertComponentsCertificateCard = () => __webpack_require__.e(/* import() | components/cert-components-certificate-card */ 5).then(__webpack_require__.bind(null, 124)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const CertComponentsCertificateCard = () => __webpack_require__.e(/* import() | components/cert-components-certificate-card */ 5).then(__webpack_require__.bind(null, 124)).then(c => wrapFunctional(c.default || c));
+const IndexBannerIndex = () => __webpack_require__.e(/* import() | components/index-banner-index */ 8).then(__webpack_require__.bind(null, 127)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {
